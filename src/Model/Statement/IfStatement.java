@@ -1,17 +1,20 @@
 package Model.Statement;
 
 import Model.ProgramState;
-import Model.Exception.GenericException;
+import Model.Exception.*;
 import Model.Expression.*;
-import Utils.Dictionary.IMyDictionary;
-import Utils.Stack.IMyStack;
+import Model.Statement.*;
+import Model.Type.*;
+import Model.Value.*;
+import Utils.Dictionary.*;
+import Utils.Stack.*;
 
-public class IfStatement {
-    Expression condition;
+public class IfStatement implements IStatement {
+    IExpression condition;
     IStatement thenBranch;
     IStatement elseBranch;
 
-    public IfStatement(Expression condition, IStatement thenBranch, IStatement elseBranch) {
+    public IfStatement(IExpression condition, IStatement thenBranch, IStatement elseBranch) {
         this.condition = condition;
         this.thenBranch = thenBranch;
         this.elseBranch = elseBranch;
@@ -20,14 +23,14 @@ public class IfStatement {
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
         IMyStack<IStatement> stack = state.getExecutionStack();
-        IMyDictionary<String, Value> symbolTable = state.getSymbolTable();
+        IMyDictionary<String, IValue> symbolTable = state.getSymbolTable();
 
-        Value conditionValue = condition.evaluate(symbolTable);
+        IValue conditionValue = condition.evaluate(symbolTable);
         if(!(conditionValue instanceof BooleanValue)) {
             throw new GenericException("IfStatement execute: conditional expression is not a boolean: " + conditionValue.toString());
         }
 
-        BoolValue boolCondition = (BoolValue) conditionValue;
+        BooleanValue boolCondition = (BooleanValue) conditionValue;
 
         if(boolCondition.getValue()) {
             stack.push(thenBranch);

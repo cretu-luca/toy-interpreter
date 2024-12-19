@@ -20,4 +20,14 @@ public class MyStack<T> implements IMyStack<T> {
     public Boolean isEmpty() {
         return this.stack.isEmpty();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (T elem : stack) {
+            sb.append(elem.toString()).append("\n");
+        }
+        if (sb.length() == 0) return "Empty stack";
+        return sb.toString();
+    }
 }

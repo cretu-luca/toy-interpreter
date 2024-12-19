@@ -4,4 +4,5 @@ import Model.Type.*;
 
 public interface IValue {
     IType getType();
+    // IValue getValue();
 }

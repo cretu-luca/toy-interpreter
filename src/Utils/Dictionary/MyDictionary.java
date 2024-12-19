@@ -1,15 +1,16 @@
 package Utils.Dictionary;
 
 import java.util.Dictionary;
+import java.util.HashMap;
 import java.util.Map;
 
 import Model.Exception.GenericException;
 
 public class MyDictionary<K, V> implements IMyDictionary<K, V> {
-    Map<K, V> dictionary;
+    private HashMap<K,V> dictionary;
 
-    public MyDictionary(Dictionary<K, V> dictionary) {
-
+    public MyDictionary() {
+        this.dictionary = new HashMap<K,V>();
     }
 
     @Override
@@ -33,5 +34,18 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     @Override
     public Boolean isDefined(K key) {
         return this.dictionary.containsKey(key);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (Map.Entry<K,V> entry : dictionary.entrySet()) {
+            sb.append(entry.getKey())
+                .append(" --> ")
+                .append(entry.getValue())
+                .append("\n");
+        }
+        if (sb.length() == 0) return "Empty symbol table";
+        return sb.toString();
     }
 }

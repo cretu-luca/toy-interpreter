@@ -10,11 +10,12 @@ public class Controller {
     private IRepository repository;
     private Boolean displayFlag;
 
-    public Controller() {
+    public Controller(IRepository repository) {
+        this.repository = repository;
         this.displayFlag = true;
     }
 
-    ProgramState oneStep(ProgramState state) throws GenericException{
+    public ProgramState oneStep(ProgramState state) throws GenericException{
         IMyStack<IStatement> stack = state.getExecutionStack();
         if(stack.isEmpty()) {
             throw new GenericException("oneStep: ExecutionStack is empty!");
@@ -24,7 +25,7 @@ public class Controller {
         return currentStatement.execute(state);
     }
 
-    void allSteps() {
+    public void allSteps() {
         ProgramState state = repository.getProgramState();
         
         while(!state.getExecutionStack().isEmpty()) {

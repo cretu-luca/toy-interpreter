@@ -1,21 +1,25 @@
 package Model.Statement;
 
-import java.beans.Expression;
-
 import Model.ProgramState;
-import Model.Exception.GenericException;
-import Utils.Dictionary.IMyDictionary;
-import Utils.List.IMyList;
+import Model.Exception.*;
+import Model.Value.*;
+import Model.Expression.*;
+import Utils.Dictionary.*;
+import Utils.List.*;
 
 public class PrintStatement implements IStatement {
-    Expression expressionToPrint;
+    IExpression expressionToPrint;
     
+    public PrintStatement(IExpression expressionToPrint) {
+        this.expressionToPrint = expressionToPrint;
+    }
+
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
-        IMyList<Value> output = state.getOutput();
-        IMyDictionary<String, Value> symbolTable = state.getSymbolTable();
+        IMyList<IValue> output = state.getOutput();
+        IMyDictionary<String, IValue> symbolTable = state.getSymbolTable();
 
-        Value value = expressionToPrint.evaluate(symbolTable);
+        IValue value = expressionToPrint.evaluate(symbolTable);
         output.add(value);
 
         return state;

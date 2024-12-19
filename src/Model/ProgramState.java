@@ -1,39 +1,50 @@
 package Model;
 
-import Model.Statement.IStatement;
-import Utils.Dictionary.IMyDictionary;
-import Utils.List.IMyList;
-import Utils.Stack.IMyStack;
-
-import com.sun.jdi.Value;
+import Model.Statement.*;
+import Model.Value.*;
+import Utils.Dictionary.*;
+import Utils.List.*;
+import Utils.Stack.*;
 
 public class ProgramState {
-    private IMyStack<IStatement> ExecutionStack;
-    private IMyDictionary<String, Value> SymbolTable;
-    private IMyList<Value> Output;
+    private IMyStack<IStatement> executionStack;
+    private IMyDictionary<String, IValue> symbolTable;
+    private IMyList<IValue> output;
 
-    private IStatement OriginalProgram;
+    // private IStatement originalProgram;
 
     public ProgramState(IMyStack<IStatement> ExecutionStack,
-                        IMyDictionary<String, Value> SymbolTable,
-                        IMyList<Value> Output,
-                        IStatement NewProgram) {
-        this.ExecutionStack = ExecutionStack;
-        this.SymbolTable = SymbolTable;
-        this.Output = Output;
+                        IMyDictionary<String, IValue> symbolTable,
+                        IMyList<IValue> Output,
+                        IStatement newProgram) {
+        this.executionStack = ExecutionStack;
+        this.symbolTable = symbolTable;
+        this.output = Output;
 
-        OriginalProgram = NewProgram;
+        // originalProgram = newProgram;
     }
 
     public IMyStack<IStatement> getExecutionStack() {
-        return ExecutionStack;
+        return executionStack;
     }
 
-    public IMyDictionary<String, Value> getSymbolTable() {
-        return SymbolTable;
+    public IMyDictionary<String, IValue> getSymbolTable() {
+        return symbolTable;
     }
 
-    public IMyList<Value> getOutput() {
-        return Output;
+    public IMyList<IValue> getOutput() {
+        return output;
+    }
+
+    @Override
+    public String toString() {
+        return "\n---------- Program State ----------" +
+               "\n=== Execution Stack ===" +
+               "\n" + executionStack.toString() + 
+               "\n=== Symbol Table ===" +
+               "\n" + symbolTable.toString() +
+               "\n=== Output ===" +
+               "\n" + output.toString() +
+               "\n--------------------------------\n";
     }
 }
