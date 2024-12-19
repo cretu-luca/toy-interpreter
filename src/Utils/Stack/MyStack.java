@@ -15,4 +15,9 @@ public class MyStack<T> implements IMyStack<T> {
     public void push(T t) {
         this.stack.push(t);
     }
+    
+    @Override
+    public Boolean isEmpty() {
+        return this.stack.isEmpty();
+    }
 }
