@@ -2,7 +2,7 @@ package Model.Expression;
 
 import Model.Value.*;
 import Model.Exception.GenericException;
-import Model.State.SymbolTable;
+import Model.State.ISymbolTable;
 import Model.Type.*;
 
 public class ArithmeticExpression implements IExpression {

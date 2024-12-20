@@ -10,4 +10,5 @@ public interface IFileTable {
     BufferedReader openFile(StringValue fileName) throws GenericException;
     void addOpenedFile(StringValue fileName, BufferedReader reader);
     BufferedReader getFileReader(StringValue fileName);
+    void closeFile(StringValue fileName) throws GenericException;
 }

@@ -47,4 +47,12 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
         if (sb.length() == 0) return "Empty symbol table";
         return sb.toString();
     }
+
+    @Override
+    public void remove(K key) {
+        if (!isDefined(key)) {
+            throw new GenericException("Remove: key not found in dictionary: " + key);
+        }
+        this.dictionary.remove(key);
+    }
 }
