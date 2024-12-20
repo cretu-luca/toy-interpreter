@@ -1,17 +1,17 @@
 package Model.Expression;
 
-import Model.Value.IValue;
-import Utils.Dictionary.IMyDictionary;
+import Model.State.*;
+import Model.Value.*;
 
 public class ValueExpression implements IExpression {
     IValue value;
 
-    public ValueExpression(IValue value) {
-        this.value = value;
+    public ValueExpression(IValue newValue) {
+        this.value = newValue;
     }
 
     @Override
-    public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
+    public IValue evaluate(ISymbolTable symbolTable) {
         return value;
     }
     

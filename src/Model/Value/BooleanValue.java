@@ -5,8 +5,8 @@ import Model.Type.*;
 public class BooleanValue implements IValue {
     private final boolean value;
     
-    public BooleanValue(boolean value) {
-        this.value = value;
+    public BooleanValue(boolean newValue) {
+        this.value = newValue;
     }
 
     public boolean getValue() {

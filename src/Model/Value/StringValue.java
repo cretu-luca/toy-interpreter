@@ -5,8 +5,8 @@ import Model.Type.*;
 public class StringValue implements IValue {
     private final String value;
 
-    public StringValue(String value) {
-        this.value = value;
+    public StringValue(String newValue) {
+        this.value = newValue;
     }
 
     public String getValue() {

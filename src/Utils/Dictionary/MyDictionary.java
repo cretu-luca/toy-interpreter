@@ -1,6 +1,5 @@
 package Utils.Dictionary;
 
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 

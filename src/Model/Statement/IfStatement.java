@@ -1,29 +1,26 @@
 package Model.Statement;
 
-import Model.ProgramState;
 import Model.Exception.*;
 import Model.Expression.*;
-import Model.Statement.*;
-import Model.Type.*;
+import Model.State.ProgramState;
+import Model.State.*;
 import Model.Value.*;
-import Utils.Dictionary.*;
-import Utils.Stack.*;
 
 public class IfStatement implements IStatement {
     IExpression condition;
     IStatement thenBranch;
     IStatement elseBranch;
 
-    public IfStatement(IExpression condition, IStatement thenBranch, IStatement elseBranch) {
-        this.condition = condition;
-        this.thenBranch = thenBranch;
-        this.elseBranch = elseBranch;
+    public IfStatement(IExpression newCondition, IStatement newThenBranch, IStatement newElseBranch) {
+        this.condition = newCondition;
+        this.thenBranch = newThenBranch;
+        this.elseBranch = newElseBranch;
     }
 
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
-        IMyStack<IStatement> stack = state.getExecutionStack();
-        IMyDictionary<String, IValue> symbolTable = state.getSymbolTable();
+        IExecutionStack stack = state.getExecutionStack();
+        ISymbolTable symbolTable = state.getSymbolTable();
 
         IValue conditionValue = condition.evaluate(symbolTable);
         if(!(conditionValue instanceof BooleanValue)) {

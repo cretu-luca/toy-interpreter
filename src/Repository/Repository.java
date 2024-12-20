@@ -4,14 +4,14 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-import Model.ProgramState;
+import Model.State.ProgramState;
 
 public class Repository implements IRepository {
     ProgramState programState;
     String logFilePath;
     
-    public Repository(ProgramState programState) {
-        this.programState = programState;
+    public Repository(ProgramState newProgramState) {
+        this.programState = newProgramState;
     }
 
     @Override

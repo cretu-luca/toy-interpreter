@@ -3,7 +3,7 @@ package Model.Expression;
 import Model.Value.*;
 import Model.Type.*;
 import Model.Exception.*;
-import Utils.Dictionary.*;
+import Model.State.*;
 
 public class LogicExpression implements IExpression {
     private final IExpression firstExpression;
@@ -11,20 +11,20 @@ public class LogicExpression implements IExpression {
 
     private final String operator;
 
-    LogicExpression(IExpression firstExpression, IExpression secondExpression, String operator) {
-        this.firstExpression = firstExpression;
-        this.secondExpression = secondExpression;
-        this.operator = operator;
+    LogicExpression(IExpression newFirstExpression, IExpression newSecondExpression, String newOperator) {
+        this.firstExpression = newFirstExpression;
+        this.secondExpression = newSecondExpression;
+        this.operator = newOperator;
     }
 
     @Override
-    public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
+    public IValue evaluate(ISymbolTable symbolTable) {
         IValue firstValue = firstExpression.evaluate(symbolTable);
         if(firstValue.getType().equals(new BooleanType())) {
             IValue secondValue = secondExpression.evaluate(symbolTable);
             if(secondValue.getType().equals(new BooleanType())) {
-                boolean firstBoolean = ((BooleanValue) firstValue).getValue();
-                boolean secondBoolean = ((BooleanValue) secondValue).getValue();
+                Boolean firstBoolean = ((BooleanValue) firstValue).getValue();
+                Boolean secondBoolean = ((BooleanValue) secondValue).getValue();
 
                 switch(operator) {
                     case "&": return new BooleanValue(firstBoolean & secondBoolean);

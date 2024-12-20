@@ -2,10 +2,10 @@ package View;
 
 import Controller.Controller;
 import Model.Expression.*;
+import Model.State.ProgramState;
 import Model.Statement.*;
 import Model.Type.*;
 import Model.Value.*;
-import Model.ProgramState;
 import Repository.*;
 import Utils.Dictionary.IMyDictionary;
 import Utils.Dictionary.MyDictionary;

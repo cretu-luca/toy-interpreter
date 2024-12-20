@@ -1,6 +1,6 @@
 package Repository;
 
-import Model.ProgramState;
+import Model.State.ProgramState;
 
 public interface IRepository {
     ProgramState getProgramState();

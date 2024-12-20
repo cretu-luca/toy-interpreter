@@ -5,8 +5,8 @@ import Model.Type.*;
 public class IntValue implements IValue {
     private final int value;
     
-    public IntValue(int value) {
-        this.value = value;
+    public IntValue(int newValue) {
+        this.value = newValue;
     }
 
     public int getValue() {

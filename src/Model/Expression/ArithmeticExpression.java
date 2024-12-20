@@ -2,8 +2,8 @@ package Model.Expression;
 
 import Model.Value.*;
 import Model.Exception.GenericException;
+import Model.State.SymbolTable;
 import Model.Type.*;
-import Utils.Dictionary.IMyDictionary;
 
 public class ArithmeticExpression implements IExpression {
     IExpression firstExpression;
@@ -11,20 +11,20 @@ public class ArithmeticExpression implements IExpression {
 
     String operator;
 
-    public ArithmeticExpression(IExpression first, IExpression second, String operator) {
-        this.firstExpression = first;
-        this.secondExpression = second;
-        this.operator = operator;
+    public ArithmeticExpression(IExpression newFirstExpression, IExpression newSecondExpression, String newOperator) {
+        this.firstExpression = newFirstExpression;
+        this.secondExpression = newSecondExpression;
+        this.operator = newOperator;
     }
 
     @Override
-    public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
+    public IValue evaluate(ISymbolTable symbolTable) {
         IValue firstValue = firstExpression.evaluate(symbolTable);
         if(firstValue.getType().equals(new IntType())) {
             IValue secondValue = secondExpression.evaluate(symbolTable);
             if(secondValue.getType().equals(new IntType())) {
-                int firstInteger = ((IntValue) firstValue).getValue();
-                int secondInteger =  ((IntValue) secondValue).getValue();
+                Integer firstInteger = ((IntValue) firstValue).getValue();
+                Integer secondInteger =  ((IntValue) secondValue).getValue();
 
                 switch(operator) {
                     case "+": return new IntValue(firstInteger + secondInteger);

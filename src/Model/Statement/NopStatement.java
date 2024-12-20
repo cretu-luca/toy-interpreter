@@ -1,6 +1,6 @@
 package Model.Statement;
 
-import Model.ProgramState;
+import Model.State.ProgramState;
 
 public class NopStatement implements IStatement {
     @Override
