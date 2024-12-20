@@ -2,35 +2,34 @@ package Model.Value;
 
 import Model.Type.*;
 
-public class IntValue implements IValue {
-    private final int value;
-    
-    public IntValue(int value) {
+public class StringValue implements IValue {
+    private final String value;
+
+    public StringValue(String value) {
         this.value = value;
     }
 
-    public int getValue() {
-        return this.value;
+    public String getValue() {
+        return value;
     }
 
     @Override
     public String toString() {
-        return String.valueOf(value);
+        return value;
     }
 
     @Override
     public IType getType() {
-        return new IntType();
+        return new StringType();
     }
 
     @Override
     public boolean equals(Object another) {
-        if(!(another instanceof IntValue)) {
+        if(!(another instanceof StringValue)) {
             return false;
         }
 
-        IntValue anotherValue = (IntValue) another;
+        StringValue anotherValue = (StringValue) another;
         return this.value == anotherValue.value;
     }
-
 }

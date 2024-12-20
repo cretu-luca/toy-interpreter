@@ -6,9 +6,7 @@ public class IntType implements IType {
     
     @Override
     public boolean equals(Object another) {
-        if(another instanceof IntType) {
-            return true;
-        } else return false;
+        return another instanceof IntType;
     }
 
     public String toString() {

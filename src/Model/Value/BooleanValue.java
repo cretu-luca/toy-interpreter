@@ -1,7 +1,6 @@
 package Model.Value;
 
-import Model.Type.BooleanType;
-import Model.Type.IType;
+import Model.Type.*;
 
 public class BooleanValue implements IValue {
     private final boolean value;
@@ -22,5 +21,15 @@ public class BooleanValue implements IValue {
     @Override
     public IType getType() {
         return new BooleanType();
+    }
+
+    @Override
+    public boolean equals(Object another) {
+        if(!(another instanceof BooleanValue)) {
+            return false;
+        }
+
+        BooleanValue anotherValue = (BooleanValue) another;
+        return this.value == anotherValue.value;
     }
 }

@@ -33,12 +33,17 @@ public class Controller {
                 try {
                     if(displayFlag) {
                         System.out.println(state);
-                    oneStep(state);
                     }
+                       
+                    oneStep(state);
                 } catch (GenericException e) {
                     System.out.println("Execution error: " + e.getMessage());
                     break;
                 }
+            }
+
+            if(displayFlag) {
+                System.out.println(state);
             }
         } catch (Exception e) {
             System.out.println("Controller error: " + e.getMessage());

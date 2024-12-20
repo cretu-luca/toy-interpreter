@@ -6,9 +6,7 @@ public class BooleanType implements IType {
     
     @Override
     public boolean equals(Object another) {
-        if(another instanceof BooleanType) {
-            return true;
-        } else return false;
+        return another instanceof BooleanType;
     }
 
     public String toString() {

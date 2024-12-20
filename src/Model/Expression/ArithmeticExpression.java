@@ -11,6 +11,12 @@ public class ArithmeticExpression implements IExpression {
 
     String operator;
 
+    public ArithmeticExpression(IExpression first, IExpression second, String operator) {
+        this.firstExpression = first;
+        this.secondExpression = second;
+        this.operator = operator;
+    }
+
     @Override
     public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
         IValue firstValue = firstExpression.evaluate(symbolTable);
@@ -35,4 +41,8 @@ public class ArithmeticExpression implements IExpression {
         } else throw new GenericException("First operand is not an integer");
     }
     
+    @Override
+    public String toString() {
+        return this.firstExpression + " " + operator + " " + this.secondExpression;
+    }
 }

@@ -1,6 +1,5 @@
 package Utils.Stack;
 
-import java.util.Collection;
 import java.util.Stack;
 
 public class MyStack<T> implements IMyStack<T> {
@@ -27,11 +26,16 @@ public class MyStack<T> implements IMyStack<T> {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (T elem : stack) {
-            sb.append(elem.toString()).append("\n");
+        if(stack.isEmpty()) {
+            return "";
         }
-        if (sb.length() == 0) return "Empty stack";
+    
+        StringBuilder sb = new StringBuilder();
+        
+        T nextStatement = stack.pop();
+        sb.append(nextStatement.toString()).append("\n").append(this.toString());
+        this.stack.push(nextStatement);
+
         return sb.toString();
     }
 }

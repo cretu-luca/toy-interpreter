@@ -20,10 +20,20 @@ public class Interpreter {
     public Interpreter() {
         // int v; v=2; Print(v)
         IStatement exampleProgram = new CompoundStatement(
-            new VariableDeclarationStatement("v", new IntType()),
+            new VariableDeclarationStatement("a", new BooleanType()),
             new CompoundStatement(
-                new AssignmentStatement("v", new ValueExpression(new IntValue(2))),
-                new PrintStatement(new VariableExpression("v"))
+                new VariableDeclarationStatement("v", new IntType()),
+                new CompoundStatement(
+                    new AssignmentStatement("a", new ValueExpression(new BooleanValue(true))),
+                    new CompoundStatement(
+                        new IfStatement(
+                            new VariableExpression("a"),
+                            new AssignmentStatement("v", new ValueExpression(new IntValue(2))),
+                            new AssignmentStatement("v", new ValueExpression(new IntValue(3)))
+                        ),
+                        new PrintStatement(new VariableExpression("v"))
+                    )
+                )
             )
         );
 
