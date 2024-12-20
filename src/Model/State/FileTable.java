@@ -47,7 +47,6 @@ public class FileTable implements IFileTable {
     public void closeFile(StringValue fileName) throws GenericException {
         String fileNameStr = fileName.getValue();
         
-        // Verify the file is actually open before attempting to close
         if (!fileDictionary.isDefined(fileNameStr)) {
             throw new GenericException("File " + fileName + " is not open.");
         }
@@ -55,7 +54,6 @@ public class FileTable implements IFileTable {
         BufferedReader reader = fileDictionary.get(fileNameStr);
         try {
             reader.close();
-            // Ensure the file is removed from the dictionary
             fileDictionary.remove(fileNameStr);
         } catch (IOException e) {
             throw new GenericException("Error closing file: " + fileName);

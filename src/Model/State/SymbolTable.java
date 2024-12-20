@@ -1,7 +1,6 @@
 package Model.State;
 
 import Model.Value.IValue;
-import Model.Value.StringValue;
 import Utils.Dictionary.*;
 
 public class SymbolTable implements ISymbolTable {
@@ -12,23 +11,23 @@ public class SymbolTable implements ISymbolTable {
     }
 
     @Override
-    public void add(StringValue variableName, IValue variableValue) {
-        this.dictionary.add(variableName.getValue(), variableValue);
+    public void add(String variableName, IValue variableValue) {
+        this.dictionary.add(variableName, variableValue);
     }
 
     @Override
-    public void update(StringValue variableName, IValue variableValue) {
-        this.dictionary.update(variableName.getValue(), variableValue);
+    public void update(String variableName, IValue variableValue) {
+        this.dictionary.update(variableName, variableValue);
     }
 
     @Override
-    public IValue get(StringValue variableName) {
-        return this.dictionary.get(variableName.getValue());
+    public IValue get(String variableName) {
+        return this.dictionary.get(variableName);
     }
 
     @Override
-    public Boolean isDefined(StringValue variableName) {
-       return this.dictionary.isDefined(variableName.getValue());
+    public Boolean isDefined(String variableName) {
+       return this.dictionary.isDefined(variableName);
     }
     
     @Override

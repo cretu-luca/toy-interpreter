@@ -27,37 +27,36 @@ public class Interpreter {
     
     public Interpreter() {
     IStatement complexExample = new CompoundStatement(
-        new VariableDeclarationStatement(new StringValue("fileName"), new StringType()),
+        new VariableDeclarationStatement("fileName", new StringType()),
         new CompoundStatement(
             new AssignmentStatement(
-                new StringValue("fileName"), 
+                "fileName", 
                 new ValueExpression(new StringValue("/Users/cretuluca/uni/toy-interpreter/log.txt"))
             ),
             new CompoundStatement(
-                new OpenFileStatement(new VariableExpression(new StringValue("fileName"))),
+                new OpenFileStatement(new VariableExpression("fileName")),
                 new CompoundStatement(
-                    new VariableDeclarationStatement(new StringValue("x"), new IntType()),
+                    new VariableDeclarationStatement("x", new IntType()),
                     new CompoundStatement(
                         new ReadFileStatement(
-                            new VariableExpression(new StringValue("fileName")), 
+                            new VariableExpression("fileName"), 
                             new StringValue("x")
                         ),
                         new CompoundStatement(
-                            new PrintStatement(new VariableExpression(new StringValue("x"))),
+                            new PrintStatement(new VariableExpression("x")),
                             new CompoundStatement(
                                 new IfStatement(
                                     new ValueExpression(new BooleanValue(true)),
                                     new PrintStatement(new ValueExpression(new StringValue("File read successfully"))),
                                     new PrintStatement(new ValueExpression(new StringValue("File read failed")))
                                 ),
-                                new CloseFileStatement(new VariableExpression(new StringValue("fileName")))
+                                new CloseFileStatement(new VariableExpression("fileName")))
                             )
                         )
                     )
                 )
             )
-        )
-    );
+        );
 
     IExecutionStack executionStack = new ExecutionStack();
     ISymbolTable symbolTable = new SymbolTable();

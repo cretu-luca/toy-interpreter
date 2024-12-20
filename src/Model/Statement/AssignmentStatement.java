@@ -6,13 +6,12 @@ import Model.Value.*;
 import Model.Expression.*;
 import Model.State.ProgramState;
 import Model.State.ISymbolTable;
-import Utils.Dictionary.*;
 
 public class AssignmentStatement implements IStatement {
-    private final StringValue variableName;
+    private final String variableName;
     private final IExpression expression;
 
-    public AssignmentStatement(StringValue newVariableName, IExpression newExpression) {
+    public AssignmentStatement(String newVariableName, IExpression newExpression) {
         this.variableName = newVariableName;
         this.expression = newExpression;
     }

@@ -7,10 +7,10 @@ import Model.Value.*;
 import Model.Type.*;
 
 public class VariableDeclarationStatement implements IStatement {
-    public StringValue variableName;
+    public String variableName;
     public IType variableType;
 
-    public VariableDeclarationStatement(StringValue newVariableName, IType newVariableType) {
+    public VariableDeclarationStatement(String newVariableName, IType newVariableType) {
         this.variableName = newVariableName;
         this.variableType = newVariableType;
     }

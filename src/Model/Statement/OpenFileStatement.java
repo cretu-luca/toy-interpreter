@@ -1,8 +1,6 @@
 package Model.Statement;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 import Model.Exception.*;
 import Model.Expression.*;

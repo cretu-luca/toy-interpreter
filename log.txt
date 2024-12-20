@@ -1,4 +1,4 @@
-88
+1203
 ---------- Program State ----------
 === Execution Stack ===
 
@@ -149,7 +149,7 @@ Empty output
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
 Empty output
@@ -165,7 +165,7 @@ Empty output
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
 Empty output
@@ -180,10 +180,10 @@ Empty output
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
-88
+1203
 
 -----------------------------------
 
@@ -197,10 +197,10 @@ closeFile(fileName)
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
-88
+1203
 
 -----------------------------------
 
@@ -214,10 +214,10 @@ closeFile(fileName)
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
-88
+1203
 
 -----------------------------------
 
@@ -230,253 +230,10 @@ x --> 88
 
 === Symbol Table ===
 fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
+x --> 1203
 
 === Output ===
-88
-File read successfully
-
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-Empty symbol table
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( fileName = /Users/cretuluca/uni/toy-interpreter/log.txt; ( open(fileName); ( int x; ( readFile(fileName, x); ( print(x); ( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName)))))))
-
-=== Symbol Table ===
-Empty symbol table
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> 
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( open(fileName); ( int x; ( readFile(fileName, x); ( print(x); ( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName))))))
-
-=== Symbol Table ===
-fileName --> 
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( int x; ( readFile(fileName, x); ( print(x); ( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName)))))
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( readFile(fileName, x); ( print(x); ( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName))))
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 0
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( print(x); ( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName)))
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 0
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-( (if(true) then(print(File read successfully)) else(print(File read failed))); closeFile(fileName))
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-Empty output
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-88
-
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-closeFile(fileName)
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-88
-
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-closeFile(fileName)
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-88
-
------------------------------------
-
-
-------------------------
-
-
----------- Program State ----------
-=== Execution Stack ===
-
-=== Symbol Table ===
-fileName --> /Users/cretuluca/uni/toy-interpreter/log.txt
-x --> 88
-
-=== Output ===
-88
+1203
 File read successfully
 
 -----------------------------------

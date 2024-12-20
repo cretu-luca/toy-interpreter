@@ -7,16 +7,6 @@ public class ProgramState {
     private ISymbolTable symbolTable;
     private IFileTable fileTable;
     private IOutput output;
-    
-    // it feels more natural for the adt's to use Java types
-    // however, program state should not
-    // therefore, I implement the ExectutionStack, SymbolTable,... in order to 
-    // delegate that responsability to a different class in the hierarchy
-    // therefore internal representation of SymbolTable uses String,
-    // but it received a StringValue from the ProgramState
-    // SymbolTable handles the conversion
-
-    // private IStatement originalProgram;
 
     public ProgramState(IExecutionStack newExecutionStack,
                         ISymbolTable newSymbolTable,

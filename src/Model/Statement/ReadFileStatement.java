@@ -30,13 +30,13 @@ public class ReadFileStatement implements IStatement {
             throw new GenericException("ReadFileStatement error: " + e.getMessage());
         }
 
-        if(!symbolTable.isDefined(variableNameString)) {
+        if(!symbolTable.isDefined(variableNameString.getValue())) {
             throw new GenericException("ReadFileStatement error: variable " + this.variableName + " was not declared.");
         }
 
         IType variableNameType;
         try {
-            variableNameType = symbolTable.get(variableNameString).getType();
+            variableNameType = symbolTable.get(variableNameString.getValue()).getType();
         } catch (GenericException e) {
             throw new GenericException("ReadFileStatement error: " + e.getMessage());
         }
@@ -72,7 +72,7 @@ public class ReadFileStatement implements IStatement {
                 value = Integer.parseInt(line);
             }
             
-            symbolTable.update(variableNameString, new IntValue(value));
+            symbolTable.update(variableNameString.getValue(), new IntValue(value));
         } catch (IOException e) {
             throw new GenericException("ReadFileStatement error: error reading from file.");
         } catch (NumberFormatException e) {
