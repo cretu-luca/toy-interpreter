@@ -34,5 +34,4 @@ public class LogicExpression implements IExpression {
             } else throw new GenericException("Second operand is not boolean value.");
         } else throw new GenericException("First operand is not boolean value.");
     }
-    
 }

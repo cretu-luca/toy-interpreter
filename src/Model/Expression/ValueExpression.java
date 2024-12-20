@@ -13,5 +13,10 @@ public class ValueExpression implements IExpression {
     @Override
     public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
         return value;
-    }   
+    }
+    
+    @Override
+    public String toString() {
+        return String.valueOf(this.value);
+    }
 }

@@ -22,6 +22,7 @@ public class ProgramState {
         this.output = Output;
 
         // originalProgram = newProgram;
+        this.executionStack.push(newProgram);
     }
 
     public IMyStack<IStatement> getExecutionStack() {

@@ -6,6 +6,10 @@ import java.util.Stack;
 public class MyStack<T> implements IMyStack<T> {
     private Stack<T> stack;
 
+    public MyStack() {
+        this.stack = new Stack<T>();
+    }
+
     @Override
     public T pop() {
         return stack.pop();

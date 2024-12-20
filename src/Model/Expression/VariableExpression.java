@@ -14,4 +14,9 @@ public class VariableExpression implements IExpression {
     public IValue evaluate(IMyDictionary<String, IValue> symbolTable) {
         return symbolTable.get(variableName);
     }
+
+    @Override
+    public String toString() {
+        return variableName;
+    }
 }

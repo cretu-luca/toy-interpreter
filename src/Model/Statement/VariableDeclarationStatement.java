@@ -28,4 +28,8 @@ public class VariableDeclarationStatement implements IStatement {
         return state;
     }
     
+    @Override
+    public String toString() {
+        return this.variableType + " " + this.variableName;
+    }
 }

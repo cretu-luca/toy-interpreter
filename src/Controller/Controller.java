@@ -26,14 +26,22 @@ public class Controller {
     }
 
     public void allSteps() {
-        ProgramState state = repository.getProgramState();
-        
-        while(!state.getExecutionStack().isEmpty()) {
-            oneStep(state);
-
-            if(displayFlag) {
-                System.out.println(state);
+        try {
+            ProgramState state = repository.getProgramState();
+            
+            while(!state.getExecutionStack().isEmpty()) {
+                try {
+                    if(displayFlag) {
+                        System.out.println(state);
+                    oneStep(state);
+                    }
+                } catch (GenericException e) {
+                    System.out.println("Execution error: " + e.getMessage());
+                    break;
+                }
             }
+        } catch (Exception e) {
+            System.out.println("Controller error: " + e.getMessage());
         }
     }
 }
