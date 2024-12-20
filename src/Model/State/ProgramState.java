@@ -1,7 +1,5 @@
 package Model.State;
 
-import java.io.File;
-
 import Model.Statement.*;
 
 public class ProgramState {
@@ -9,16 +7,20 @@ public class ProgramState {
     private ISymbolTable symbolTable;
     private IFileTable fileTable;
     private IOutput output;
+    private IHeapTable heapTable;
 
     public ProgramState(IExecutionStack newExecutionStack,
                         ISymbolTable newSymbolTable,
                         IOutput newOutput,
                         IFileTable newFileTable,
+                        IHeapTable newHeapTable,
                         IStatement newProgram) {
+                            
         this.executionStack = newExecutionStack;
         this.symbolTable = newSymbolTable;
         this.output = newOutput;
         this.fileTable = newFileTable;
+        this.heapTable = newHeapTable;
 
         // originalProgram = newProgram;
         this.executionStack.push(newProgram);
@@ -43,13 +45,15 @@ public class ProgramState {
     @Override
     public String toString() {
         return "\n---------- Program State ----------" +
-               "\n=== Execution Stack ===" +
+               "\n\n=== Execution Stack ===" +
                "\n" + executionStack.toString() + 
-               "\n=== Symbol Table ===" +
+               "\n\n===== Symbol Table ====" +
                "\n" + symbolTable.toString() +
-               "\n=== File Table ===" +
+               "\n\n====== File Table =====" +
                "\n" + fileTable.toString() +
-               "\n=== Output ===" +
+               "\n\n====== Heap Table =====" + 
+               "\n" + heapTable.toString() +
+               "\n\n======== Output =======" +
                "\n" + output.toString() +
                "\n-----------------------------------\n";
     }

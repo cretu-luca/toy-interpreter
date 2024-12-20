@@ -82,8 +82,9 @@ public class Interpreter {
         ISymbolTable symbolTable = new SymbolTable();
         IOutput output = new Output();
         IFileTable fileTable = new FileTable();
+        IHeapTable heapTable = new HeapTable();
         
-        return new ProgramState(executionStack, symbolTable, output, fileTable, originalProgram);
+        return new ProgramState(executionStack, symbolTable, output, fileTable, heapTable, originalProgram);
     }
 
     private static Controller createController(IStatement stmt, String logFilePath) {

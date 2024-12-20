@@ -28,7 +28,7 @@ public class Repository implements IRepository {
 
     @Override
     public void logProgramState() throws GenericException {
-        try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))) {
+        try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)))) {
             ProgramState currentState = programState;        
             logFile.println(currentState.toString());
         } catch (IOException e) {

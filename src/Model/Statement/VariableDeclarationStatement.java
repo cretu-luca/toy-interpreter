@@ -3,7 +3,6 @@ package Model.Statement;
 import Model.State.ProgramState;
 import Model.Exception.*;
 import Model.State.*;
-import Model.Value.*;
 import Model.Type.*;
 
 public class VariableDeclarationStatement implements IStatement {
