@@ -6,8 +6,8 @@ import Model.Exception.GenericException;
 public class RunCommand extends ACommand {
     private Controller controller;
     
-    public RunCommand(String newKey, String newDesc, Controller controller) {
-        super(newKey, newDesc);
+    public RunCommand(String newKey, String newDescription, Controller controller) {
+        super(newKey, newDescription);
         this.controller = controller;
     }
     
