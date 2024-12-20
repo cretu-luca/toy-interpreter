@@ -1,0 +1,306 @@
+
+---------- Program State ----------
+=== Execution Stack ===
+( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+
+=== Symbol Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+boolean a
+( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+
+=== Symbol Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+
+=== Symbol Table ===
+a --> false
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+int v
+( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+
+=== Symbol Table ===
+a --> false
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+
+=== Symbol Table ===
+a --> false
+v --> 0
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+a = true
+( (if(a) then(v = 2) else(v = 3)); print(v))
+
+=== Symbol Table ===
+a --> false
+v --> 0
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( (if(a) then(v = 2) else(v = 3)); print(v))
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+(if(a) then(v = 2) else(v = 3))
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+v = 2
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 2
+
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+
+=== Symbol Table ===
+a --> true
+v --> 2
+
+=== Output ===
+2
+
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+
+=== Symbol Table ===
+Empty symbol table
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+boolean a
+( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+
+=== Symbol Table ===
+Empty symbol table
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+
+=== Symbol Table ===
+a --> false
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+int v
+( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+
+=== Symbol Table ===
+a --> false
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+
+=== Symbol Table ===
+a --> false
+v --> 0
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+a = true
+( (if(a) then(v = 2) else(v = 3)); print(v))
+
+=== Symbol Table ===
+a --> false
+v --> 0
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+( (if(a) then(v = 2) else(v = 3)); print(v))
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+(if(a) then(v = 2) else(v = 3))
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+v = 2
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 0
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+print(v)
+
+=== Symbol Table ===
+a --> true
+v --> 2
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+Empty output
+-----------------------------------
+
+
+---------- Program State ----------
+=== Execution Stack ===
+
+=== Symbol Table ===
+a --> true
+v --> 2
+
+=== File Table ===
+Empty symbol table
+=== Output ===
+2
+
+-----------------------------------
+

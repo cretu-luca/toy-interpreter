@@ -31,7 +31,7 @@ public class CloseFileStatement implements IStatement {
         }
 
         IFileTable fileTable = state.getFileTable();
-        if(fileTable.isFileAlreadyOpen(fileNameStringValue)) {
+        if(!fileTable.isFileAlreadyOpen(fileNameStringValue)) {
             throw new GenericException("CloseFileStatement error: file " + fileNameStringValue + " is not open.");
         }
 

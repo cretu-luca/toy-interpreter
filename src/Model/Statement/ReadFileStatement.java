@@ -12,9 +12,9 @@ import Model.Value.*;
 
 public class ReadFileStatement implements IStatement {
     private final IExpression fileName;
-    private final IValue variableName;
+    private final String variableName;
 
-    public ReadFileStatement(IExpression newFileName, IValue newVariableName) {
+    public ReadFileStatement(IExpression newFileName, String newVariableName) {
         this.fileName = newFileName;
         this.variableName = newVariableName;
     }
@@ -23,20 +23,13 @@ public class ReadFileStatement implements IStatement {
     public ProgramState execute(ProgramState state) throws GenericException {
         ISymbolTable symbolTable = state.getSymbolTable();
 
-        StringValue variableNameString;
-        try {
-            variableNameString = (StringValue) this.variableName;
-        } catch(GenericException e) {
-            throw new GenericException("ReadFileStatement error: " + e.getMessage());
-        }
-
-        if(!symbolTable.isDefined(variableNameString.getValue())) {
+        if(!symbolTable.isDefined(variableName)) {
             throw new GenericException("ReadFileStatement error: variable " + this.variableName + " was not declared.");
         }
 
         IType variableNameType;
         try {
-            variableNameType = symbolTable.get(variableNameString.getValue()).getType();
+            variableNameType = symbolTable.get(variableName).getType();
         } catch (GenericException e) {
             throw new GenericException("ReadFileStatement error: " + e.getMessage());
         }
@@ -72,7 +65,7 @@ public class ReadFileStatement implements IStatement {
                 value = Integer.parseInt(line);
             }
             
-            symbolTable.update(variableNameString.getValue(), new IntValue(value));
+            symbolTable.update(variableName, new IntValue(value));
         } catch (IOException e) {
             throw new GenericException("ReadFileStatement error: error reading from file.");
         } catch (NumberFormatException e) {

@@ -31,7 +31,6 @@ public class Repository implements IRepository {
         try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))) {
             ProgramState currentState = programState;        
             logFile.println(currentState.toString());
-            logFile.println("\n------------------------\n");
         } catch (IOException e) {
             throw new GenericException("Error logging program state: " + e.getMessage());
         }

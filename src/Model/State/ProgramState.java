@@ -1,5 +1,7 @@
 package Model.State;
 
+import java.io.File;
+
 import Model.Statement.*;
 
 public class ProgramState {
@@ -45,6 +47,8 @@ public class ProgramState {
                "\n" + executionStack.toString() + 
                "\n=== Symbol Table ===" +
                "\n" + symbolTable.toString() +
+               "\n=== File Table ===" +
+               "\n" + fileTable.toString() +
                "\n=== Output ===" +
                "\n" + output.toString() +
                "\n-----------------------------------\n";

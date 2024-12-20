@@ -59,4 +59,9 @@ public class FileTable implements IFileTable {
             throw new GenericException("Error closing file: " + fileName);
         }
     }
+
+    @Override
+    public String toString() {
+        return this.fileDictionary.toString();
+    }
 }
