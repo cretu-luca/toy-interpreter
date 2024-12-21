@@ -97,6 +97,7 @@ public class Interpreter {
     }
 
     private static IStatement createExample5() {
+        // Ref int v; new(v, 20); Ref int a; new(a, 30); print(ReadHeap(v))
         return new CompoundStatement(
             new VariableDeclarationStatement("v", new ReferenceType(new IntType())),
             new CompoundStatement(
@@ -113,6 +114,7 @@ public class Interpreter {
     }
 
     private static IStatement createExample6() {
+        // int v; v = 4; while(v > 0) { print(v), v = v - 1 }; print(v);
         return new CompoundStatement(
                 new VariableDeclarationStatement("v", new IntType()),
                 new CompoundStatement(
