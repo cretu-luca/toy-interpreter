@@ -9,9 +9,9 @@ import Model.Value.IValue;
 import Model.Value.IntValue;
 
 public class RelationalExpression implements IExpression {
-    public final IExpression firstExpression;
-    public final IExpression secondExpression;
-    public final String operator;
+    private final IExpression firstExpression;
+    private final IExpression secondExpression;
+    private final String operator;
 
     public RelationalExpression(IExpression newFirstExpression, IExpression newSecondExpression, String newOperator) {
         this.firstExpression = newFirstExpression;

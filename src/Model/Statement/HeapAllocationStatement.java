@@ -7,8 +7,8 @@ import Model.Value.*;
 import Model.Type.*;
 
 public class HeapAllocationStatement implements IStatement {
-    public final String variableName; 
-    IExpression expression;
+    private final String variableName; 
+    private final IExpression expression;
 
     public HeapAllocationStatement(String newVariableName, IExpression newExpression) {
         this.variableName = newVariableName;

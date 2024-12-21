@@ -4,7 +4,7 @@ import Model.State.*;
 import Model.Value.*;
 
 public class ValueExpression implements IExpression {
-    IValue value;
+    private final IValue value;
 
     public ValueExpression(IValue newValue) {
         this.value = newValue;

@@ -7,8 +7,8 @@ import Model.State.ISymbolTable;
 import Model.Type.*;
 
 public class ArithmeticExpression implements IExpression {
-    IExpression firstExpression;
-    IExpression secondExpression;
+    private final IExpression firstExpression;
+    private final IExpression secondExpression;
 
     String operator;
 

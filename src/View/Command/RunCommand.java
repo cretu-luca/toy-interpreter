@@ -4,7 +4,7 @@ import Controller.Controller;
 import Model.Exception.GenericException;
 
 public class RunCommand extends ACommand {
-    private Controller controller;
+    private final Controller controller;
     
     public RunCommand(String newKey, String newDescription, Controller controller) {
         super(newKey, newDescription);

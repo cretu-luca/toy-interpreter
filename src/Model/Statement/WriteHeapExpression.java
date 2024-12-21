@@ -9,7 +9,6 @@ import Model.Value.ReferenceValue;
 import Model.Expression.*;
 
 public class WriteHeapExpression implements IStatement {
-
     private final String variableName;
     private final IExpression expression;
     

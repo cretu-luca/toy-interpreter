@@ -10,7 +10,7 @@ import Model.Value.IValue;
 import Model.Value.StringValue;
 
 public class CloseFileStatement implements IStatement {
-    public IExpression fileName;
+    public final IExpression fileName;
 
     public CloseFileStatement(IExpression newFileName) {
         this.fileName = newFileName;

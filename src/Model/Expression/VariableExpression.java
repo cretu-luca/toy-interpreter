@@ -4,7 +4,7 @@ import Model.State.*;
 import Model.Value.*;
 
 public class VariableExpression implements IExpression {
-    private String variableName;
+    private final String variableName;
 
     public VariableExpression(String newVariableName) {
         this.variableName = newVariableName;

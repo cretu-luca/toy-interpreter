@@ -5,9 +5,9 @@ import Model.Exception.*;
 import Model.State.*;
 import Model.Type.*;
 
-public class VariableDeclarationStatement implements IStatement {
-    public String variableName;
-    public IType variableType;
+public class VariableDeclarationStatement implements IStatement {    
+    private final String variableName;
+    private final IType variableType;
 
     public VariableDeclarationStatement(String newVariableName, IType newVariableType) {
         this.variableName = newVariableName;

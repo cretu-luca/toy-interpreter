@@ -12,7 +12,6 @@ import View.Command.*;
 public class Interpreter {
     private static IStatement createExample1() {
         // int a; int b; a = 2 + 3 * 5; b = a + 1; print(b)
-
         return new CompoundStatement(
                 new VariableDeclarationStatement("a", new IntType()), 
                 new CompoundStatement(

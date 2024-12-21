@@ -9,8 +9,8 @@ import Model.Exception.GenericException;
 import Model.State.ProgramState;
 
 public class Repository implements IRepository {
-    ProgramState programState;
-    String logFilePath;
+    private final ProgramState programState;
+    private String logFilePath;
     
     public Repository(ProgramState newProgramState) {
         this.programState = newProgramState;

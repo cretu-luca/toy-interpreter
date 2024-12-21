@@ -6,9 +6,9 @@ import Model.State.*;
 import Model.Value.*;
 
 public class IfStatement implements IStatement {
-    IExpression condition;
-    IStatement thenBranch;
-    IStatement elseBranch;
+    private final IExpression condition;
+    private final IStatement thenBranch;
+    private final IStatement elseBranch;
 
     public IfStatement(IExpression newCondition, IStatement newThenBranch, IStatement newElseBranch) {
         this.condition = newCondition;

@@ -3,7 +3,7 @@ package Model.Type;
 import Model.Value.*;
 
 public class ReferenceType implements IType {
-    IType type;
+    private final IType type;
 
     public ReferenceType(IType newType) {
         this.type = newType;
