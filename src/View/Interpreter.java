@@ -161,11 +161,11 @@ public class Interpreter {
             IStatement example6 = createExample6();
 
             menu.addCommand(new RunCommand("1", "int a; int b; a = 2 + 3 * 5; b = a + 1; print(b)", createController(example1, "log1.txt")));
-            menu.addCommand(new RunCommand("2",  "bool a; int v; a = true; if a then v = 2 else v = 3; print(v)", createController(example2, "log2.txt")));
-            menu.addCommand(new RunCommand("3",  "string file; file = test.in; openFile(file); int v; readFile(file, v); print(v); readFile(file, v); print(v); closeFile(file), null", createController(example3, "log3.txt")));
-            menu.addCommand(new RunCommand("4", "Ref int v;new(v,20); print(rH(v)); wH(v,30); print(rH(v)+5);", createController(example4, "log4.txt")));
-            menu.addCommand(new RunCommand("5", "", createController(example5, "log5.txt")));
-            menu.addCommand(new RunCommand("6", "while", createController(example6, "log6.txt")));
+            menu.addCommand(new RunCommand("2", "bool a; int v; a = true; if a then v = 2 else v = 3; print(v)", createController(example2, "log2.txt")));
+            menu.addCommand(new RunCommand("3", "string file; file = test.in; openFile(file); int v; readFile(file, v); print(v); readFile(file, v); print(v); closeFile(file), null", createController(example3, "log3.txt")));
+            menu.addCommand(new RunCommand("4", "Ref int v; new(v, 20); print(readHeap(v)); writeHeap(v,30); print(readHeap(v) + 5);", createController(example4, "log4.txt")));
+            menu.addCommand(new RunCommand("5", "Ref int v; new(v, 20); Ref int a; new(a, 30); print(readHeap(v))", createController(example5, "log5.txt")));
+            menu.addCommand(new RunCommand("6", "int v; v = 4; while(v > 0) { print(v), v = v - 1 }; print(v);", createController(example6, "log6.txt")));
 
             menu.addCommand(new ExitCommand("0", "Exit"));
             
