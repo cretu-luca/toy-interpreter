@@ -1,5 +1,7 @@
 package Model.State;
 
+import java.util.Collection;
+
 import Model.Value.IValue;
 import Utils.Dictionary.*;
 
@@ -33,5 +35,10 @@ public class SymbolTable implements ISymbolTable {
     @Override
     public String toString() {
         return this.dictionary.toString();
+    }
+
+    @Override
+    public Collection<IValue> getValues() {
+        return this.dictionary.getValues();
     }
 }

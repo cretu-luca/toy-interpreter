@@ -5,18 +5,20 @@
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+a --> (2, int)
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+2 --> 30
+
 
 ======== Output =======
-18
+20
 
 -----------------------------------
 
@@ -24,7 +26,7 @@ Empty symbol table
 ---------- Program State ----------
 
 === Execution Stack ===
-( int a; ( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b)))))
+( Ref(int) v; ( new(v, 20); ( Ref(int) a; ( new(a, 30); print(readHeap(v))))))
 
 
 ===== Symbol Table ====
@@ -44,8 +46,8 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-int a
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+Ref(int) v
+( new(v, 20); ( Ref(int) a; ( new(a, 30); print(readHeap(v)))))
 
 
 ===== Symbol Table ====
@@ -65,11 +67,11 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+( new(v, 20); ( Ref(int) a; ( new(a, 30); print(readHeap(v)))))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> (0, int)
 
 
 ====== File Table =====
@@ -86,12 +88,12 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-int b
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+new(v, 20)
+( Ref(int) a; ( new(a, 30); print(readHeap(v))))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> (0, int)
 
 
 ====== File Table =====
@@ -108,19 +110,19 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+( Ref(int) a; ( new(a, 30); print(readHeap(v))))
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+
 
 ======== Output =======
 Empty output
@@ -130,20 +132,20 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-a = 2 + 3 * 5
-( b = a + 1; print(b))
+Ref(int) a
+( new(a, 30); print(readHeap(v)))
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+
 
 ======== Output =======
 Empty output
@@ -153,19 +155,20 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-( b = a + 1; print(b))
+( new(a, 30); print(readHeap(v)))
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+a --> (0, int)
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+
 
 ======== Output =======
 Empty output
@@ -175,20 +178,21 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-b = a + 1
-print(b)
+new(a, 30)
+print(readHeap(v))
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+a --> (0, int)
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+
 
 ======== Output =======
 Empty output
@@ -198,19 +202,21 @@ Empty output
 ---------- Program State ----------
 
 === Execution Stack ===
-print(b)
+print(readHeap(v))
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+a --> (2, int)
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+2 --> 30
+
 
 ======== Output =======
 Empty output
@@ -223,18 +229,20 @@ Empty output
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+a --> (2, int)
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 20
+2 --> 30
+
 
 ======== Output =======
-18
+20
 
 -----------------------------------
 

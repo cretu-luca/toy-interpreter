@@ -1,7 +1,9 @@
 package Utils.Dictionary;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import Model.Exception.GenericException;
 
@@ -36,6 +38,11 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     }
 
     @Override
+    public Set<K> keySet() {
+        return this.dictionary.keySet();
+    }
+
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (Map.Entry<K,V> entry : dictionary.entrySet()) {
@@ -54,5 +61,10 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
             throw new GenericException("Remove: key not found in dictionary: " + key);
         }
         this.dictionary.remove(key);
+    }
+
+    @Override
+    public Collection<V> getValues() {
+        return this.dictionary.values();
     }
 }

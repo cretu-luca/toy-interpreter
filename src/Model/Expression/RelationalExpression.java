@@ -39,5 +39,10 @@ public class RelationalExpression implements IExpression {
                 }
             } else throw new GenericException("Second operand is not integer.");
         } else throw new GenericException("First operand is not integer.");
-    }    
+    }
+
+    @Override
+    public String toString() {
+        return this.firstExpression + " " + operator + " " + this.secondExpression;
+    }
 }

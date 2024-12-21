@@ -96,6 +96,41 @@ public class Interpreter {
         );
     }
 
+    private static IStatement createExample5() {
+        return new CompoundStatement(
+            new VariableDeclarationStatement("v", new ReferenceType(new IntType())),
+            new CompoundStatement(
+                new HeapAllocationStatement("v", new ValueExpression(new IntValue(20))),
+                new CompoundStatement(
+                    new VariableDeclarationStatement("a", new ReferenceType(new IntType())),
+                    new CompoundStatement(
+                        new HeapAllocationStatement("a", new ValueExpression(new IntValue(30))),
+                        new PrintStatement(new ReadHeapExpression(new VariableExpression("v")))
+                    )
+                )
+            )
+        );
+    }
+
+    private static IStatement createExample6() {
+        return new CompoundStatement(
+                new VariableDeclarationStatement("v", new IntType()),
+                new CompoundStatement(
+                    new AssignmentStatement("v", new ValueExpression(new IntValue(4))),
+                    new CompoundStatement(
+                        new WhileStatement(
+                            new RelationalExpression(new VariableExpression("v"), new ValueExpression(new IntValue(0)), ">"),
+                            new CompoundStatement(
+                                new PrintStatement(new VariableExpression("v")),
+                                new AssignmentStatement("v", new ArithmeticExpression(new VariableExpression("v"), new ValueExpression(new IntValue(1)), "-"))                    
+                            ) 
+                        ), 
+                        new PrintStatement(new VariableExpression("v"))
+                    )
+                )
+        );
+    }
+
     private static ProgramState createProgramState(IStatement originalProgram) {
         IExecutionStack executionStack = new ExecutionStack();
         ISymbolTable symbolTable = new SymbolTable();
@@ -120,11 +155,15 @@ public class Interpreter {
             IStatement example2 = createExample2();
             IStatement example3 = createExample3();
             IStatement example4 = createExample4();
+            IStatement example5 = createExample5();
+            IStatement example6 = createExample6();
 
             menu.addCommand(new RunCommand("1", "int a; int b; a = 2 + 3 * 5; b = a + 1; print(b)", createController(example1, "log1.txt")));
             menu.addCommand(new RunCommand("2",  "bool a; int v; a = true; if a then v = 2 else v = 3; print(v)", createController(example2, "log2.txt")));
             menu.addCommand(new RunCommand("3",  "string file; file = test.in; openFile(file); int v; readFile(file, v); print(v); readFile(file, v); print(v); closeFile(file), null", createController(example3, "log3.txt")));
             menu.addCommand(new RunCommand("4", "Ref int v;new(v,20); print(rH(v)); wH(v,30); print(rH(v)+5);", createController(example4, "log4.txt")));
+            menu.addCommand(new RunCommand("5", "", createController(example5, "log5.txt")));
+            menu.addCommand(new RunCommand("6", "while", createController(example6, "log6.txt")));
 
             menu.addCommand(new ExitCommand("0", "Exit"));
             

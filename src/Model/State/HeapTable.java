@@ -1,6 +1,11 @@
 package Model.State;
 
 import Utils.Dictionary.*;
+
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 import Model.Exception.GenericException;
 import Model.Value.*;
 
@@ -40,7 +45,28 @@ public class HeapTable implements IHeapTable {
     }
 
     @Override
+    public void setContent(IMyDictionary<Integer, IValue> newContent) {
+        this.dictionary = newContent;
+    }
+
+    @Override
+    public IMyDictionary<Integer, IValue> getContent() {
+        return this.dictionary;
+    }
+
+
+    @Override
+    public Set<Integer> getAddresses() {
+        return new HashSet<>(this.dictionary.keySet());
+    }
+
+    @Override
     public String toString() {
         return this.dictionary.toString();
+    }
+
+    @Override
+    public Collection<IValue> getValues() {
+        return this.dictionary.getValues();
     }
 }
