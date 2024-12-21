@@ -31,7 +31,7 @@ public class AssignmentStatement implements IStatement {
             } else throw new GenericException("AssignmentStatement execute: declared type of variable " + this.variableName + " and the type of the assigned expression do not match.");
         } else throw new GenericException("AssignmentStatement execute: the used variable was not delcared before.");
         
-        return state;
+        return null;
     }
 
     @Override

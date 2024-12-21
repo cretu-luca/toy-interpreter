@@ -4,6 +4,8 @@ import Repository.IRepository;
 import Utils.Dictionary.IMyDictionary;
 
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.stream.Collectors;
 
 import Model.Exception.GenericException;
 import Model.Statement.IStatement;
@@ -18,24 +20,30 @@ public class Controller {
         this.repository = repository;
         this.garbageCollector = new GarbageCollector();
     }
+    
+    public void oneStepForAllPrograms(List<ProgramState> programsList) {
+        List<Callable<ProgramState>> callList = programsList.stream()
+                                                   .map((ProgramState p) -> (Callable<ProgramState>)(() -> { return p.oneStep(); }))
+                                                   .collect(Collectors.toList());
 
-    public ProgramState oneStep(ProgramState state) throws GenericException{
-        IExecutionStack stack = state.getExecutionStack();
-        if(stack.isEmpty()) {
-            throw new GenericException("oneStep: ExecutionStack is empty!");
-        }
+        List<PrgState> newProgramsList = executor.invokeAll(callList).stream().map(future -> { try { return future.get();}
+        
+        
+        catch(GenericException e) ) {
 
-        IStatement currentStatement = stack.pop();
-        return currentStatement.execute(state);
+        }).filter(p -> p != null).collect(Collectors.toList())
+
+        programsList.addAll(newProgramsList);
+        repository.setProgramList(programsList);
     }
 
     public void allSteps() throws GenericException {
         ProgramState program = repository.getProgramState();
-        repository.logProgramState();    
+        repository.logProgramState(program);    
         System.out.println(program);
 
         while(!program.getExecutionStack().isEmpty()) {
-            program = oneStep(program);
+            program.oneStep();
             
             List<Integer> symbolTableAddresses = garbageCollector.getAddrressesFromSymbolTable(
                 program.getSymbolTable().getValues()
@@ -49,7 +57,7 @@ public class Controller {
             program.getHeapTable().setContent(newHeap);
           
             System.out.println(program);
-            repository.logProgramState();
+            repository.logProgramState(program);
         }
     }
 }

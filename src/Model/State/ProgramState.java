@@ -1,5 +1,6 @@
 package Model.State;
 
+import Model.Exception.GenericException;
 import Model.Statement.*;
 
 public class ProgramState {
@@ -8,6 +9,7 @@ public class ProgramState {
     private IFileTable fileTable;
     private IOutput output;
     private IHeapTable heapTable;
+    private static Integer ID;
 
     public ProgramState(IExecutionStack newExecutionStack,
                         ISymbolTable newSymbolTable,
@@ -24,6 +26,22 @@ public class ProgramState {
 
         // originalProgram = newProgram;
         this.executionStack.push(newProgram);
+    }
+
+    private static synchronized int getNextID() {
+        return ID++;
+    }
+
+    public ProgramState oneStep() {
+        if(executionStack.isEmpty())
+            throw new GenericException("ProgramState error: executionStack is empty");
+
+        IStatement statement = executionStack.pop();
+        return statement.execute(this);
+    }
+
+    public Boolean isComplete() {
+        return this.executionStack.isEmpty();
     }
 
     public IExecutionStack getExecutionStack() {
@@ -48,7 +66,7 @@ public class ProgramState {
 
     @Override
     public String toString() {
-        return "\n---------- Program State ----------" +
+        return "\n---------- Program State <" + id + ">----------" +
                "\n\n=== Execution Stack ===" +
                "\n" + executionStack.toString() + 
                "\n\n===== Symbol Table ====" +

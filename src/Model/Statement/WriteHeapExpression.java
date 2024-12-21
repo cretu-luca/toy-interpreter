@@ -45,7 +45,7 @@ public class WriteHeapExpression implements IStatement {
 
         heapTable.update(address, expressionValue);
 
-        return state;
+        return null;
     }
 
     @Override

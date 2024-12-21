@@ -38,7 +38,7 @@ public class OpenFileStatement implements IStatement {
         BufferedReader fileBufferedReader = fileTable.openFile(fileNameStringValue);
         fileTable.addOpenedFile(fileNameStringValue, fileBufferedReader);
 
-        return state;
+        return null;
     }
 
     @Override

@@ -35,7 +35,7 @@ public class IfStatement implements IStatement {
             stack.push(elseBranch);
         }
 
-        return state;
+        return null;
     }
 
     @Override

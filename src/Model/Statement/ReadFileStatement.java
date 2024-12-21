@@ -73,7 +73,7 @@ public class ReadFileStatement implements IStatement {
             throw new GenericException("ReadFileStatement error: invalid number format in file.");
         }
     
-        return state;
+        return null;
     }
 
     @Override

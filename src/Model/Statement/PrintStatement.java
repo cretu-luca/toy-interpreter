@@ -21,7 +21,7 @@ public class PrintStatement implements IStatement {
         IValue value = expressionToPrint.evaluate(symbolTable, heapTable);
         output.add(value);
 
-        return state;
+        return null;
     }
 
     @Override

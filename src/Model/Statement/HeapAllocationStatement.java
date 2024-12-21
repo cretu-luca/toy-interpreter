@@ -38,7 +38,7 @@ public class HeapAllocationStatement implements IStatement {
         IValue newReference = new ReferenceValue(newPosition, referenceValueType);
         symbolTable.update(variableName, newReference);
 
-        return state;
+        return null;
     }
 
     @Override

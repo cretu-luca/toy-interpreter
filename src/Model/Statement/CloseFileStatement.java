@@ -46,7 +46,7 @@ public class CloseFileStatement implements IStatement {
             throw new GenericException("CloseFileStatement error: " + e.getMessage());
         }
 
-        return state;
+        return null;
     }
 
     @Override
