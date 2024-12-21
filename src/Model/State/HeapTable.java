@@ -14,9 +14,19 @@ public class HeapTable implements IHeapTable {
     }
 
     @Override
-    public int allocate(IValue referencedValue) {
+    public Integer allocate(IValue referencedValue) {
         this.dictionary.add(freePosition, referencedValue);
         return freePosition++;
+    }
+
+    @Override
+    public void update(Integer address, IValue referencedValue) {
+        this.dictionary.update(address, referencedValue);
+    }
+    
+    @Override
+    public Boolean isAddressDefined(Integer address) {
+        return this.dictionary.isDefined(address);
     }
 
     @Override

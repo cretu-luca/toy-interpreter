@@ -18,10 +18,10 @@ public class LogicExpression implements IExpression {
     }
 
     @Override
-    public IValue evaluate(ISymbolTable symbolTable) {
-        IValue firstValue = firstExpression.evaluate(symbolTable);
+    public IValue evaluate(ISymbolTable symbolTable, IHeapTable heapTable) {
+        IValue firstValue = firstExpression.evaluate(symbolTable, heapTable);
         if(firstValue.getType().equals(new BooleanType())) {
-            IValue secondValue = secondExpression.evaluate(symbolTable);
+            IValue secondValue = secondExpression.evaluate(symbolTable, heapTable);
             if(secondValue.getType().equals(new BooleanType())) {
                 Boolean firstBoolean = ((BooleanValue) firstValue).getValue();
                 Boolean secondBoolean = ((BooleanValue) secondValue).getValue();

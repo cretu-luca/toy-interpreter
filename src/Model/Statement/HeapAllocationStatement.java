@@ -18,6 +18,8 @@ public class HeapAllocationStatement implements IStatement {
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
         ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
+
         if(!symbolTable.isDefined(variableName)) {
             throw new GenericException("HeapAllocationStatement error: " + this.variableName + " is not defined.");
         }
@@ -26,15 +28,21 @@ public class HeapAllocationStatement implements IStatement {
             throw new GenericException("HeapAllocationStatement error: " + this.variableName + " is not a reference variable.");
         }
 
-        IValue value = expression.evaluate(symbolTable);
-        ReferenceType referenceValueType = (ReferenceType) symbolTable.get(variableName).getType();
+        IValue value = expression.evaluate(symbolTable, heapTable);
+        IType referenceValueType = ((ReferenceValue) symbolTable.get(variableName)).getReferencedType();
         if(!(value.getType().equals(referenceValueType))) {
             throw new GenericException("HeapAllocationStatement error: " + variableName + " and " + value + " do not have the same reference type.");
         }
 
-        // THIS IS WHERE YOU START
+        Integer newPosition = state.getHeapTable().allocate(value);
+        IValue newReference = new ReferenceValue(newPosition, referenceValueType);
+        symbolTable.update(variableName, newReference);
 
         return state;
     }
-    
+
+    @Override
+    public String toString() {
+        return "new(" + this.variableName + ", " + this.expression + ")";
+    }
 }

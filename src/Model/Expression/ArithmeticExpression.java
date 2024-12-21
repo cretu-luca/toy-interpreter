@@ -2,6 +2,7 @@ package Model.Expression;
 
 import Model.Value.*;
 import Model.Exception.GenericException;
+import Model.State.*;
 import Model.State.ISymbolTable;
 import Model.Type.*;
 
@@ -18,10 +19,10 @@ public class ArithmeticExpression implements IExpression {
     }
 
     @Override
-    public IValue evaluate(ISymbolTable symbolTable) {
-        IValue firstValue = firstExpression.evaluate(symbolTable);
+    public IValue evaluate(ISymbolTable symbolTable, IHeapTable heapTable) {
+        IValue firstValue = firstExpression.evaluate(symbolTable, heapTable);
         if(firstValue.getType().equals(new IntType())) {
-            IValue secondValue = secondExpression.evaluate(symbolTable);
+            IValue secondValue = secondExpression.evaluate(symbolTable, heapTable);
             if(secondValue.getType().equals(new IntType())) {
                 Integer firstInteger = ((IntValue) firstValue).getValue();
                 Integer secondInteger =  ((IntValue) secondValue).getValue();

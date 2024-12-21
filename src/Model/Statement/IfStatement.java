@@ -2,7 +2,6 @@ package Model.Statement;
 
 import Model.Exception.*;
 import Model.Expression.*;
-import Model.State.ProgramState;
 import Model.State.*;
 import Model.Value.*;
 
@@ -21,8 +20,9 @@ public class IfStatement implements IStatement {
     public ProgramState execute(ProgramState state) throws GenericException {
         IExecutionStack stack = state.getExecutionStack();
         ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
 
-        IValue conditionValue = condition.evaluate(symbolTable);
+        IValue conditionValue = condition.evaluate(symbolTable, heapTable);
         if(!(conditionValue instanceof BooleanValue)) {
             throw new GenericException("IfStatement execute: conditional expression is not a boolean: " + conditionValue.toString());
         }

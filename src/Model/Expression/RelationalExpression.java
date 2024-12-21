@@ -1,6 +1,7 @@
 package Model.Expression;
 
 import Model.Exception.GenericException;
+import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.Type.IntType;
 import Model.Value.BooleanValue;
@@ -19,10 +20,10 @@ public class RelationalExpression implements IExpression {
     }
 
     @Override
-    public IValue evaluate(ISymbolTable symbolTable) {
-        IValue firstValue = this.firstExpression.evaluate(symbolTable);
+    public IValue evaluate(ISymbolTable symbolTable, IHeapTable heapTable) {
+        IValue firstValue = this.firstExpression.evaluate(symbolTable, heapTable);
         if(firstValue.getType().equals(new IntType())) {
-            IValue secondValue = this.secondExpression.evaluate(symbolTable);
+            IValue secondValue = this.secondExpression.evaluate(symbolTable, heapTable);
             if(secondValue.getType().equals(new IntType())) {
                 Integer firstInteger = ((IntValue) firstValue).getValue();
                 Integer secondInteger = ((IntValue) secondValue).getValue();

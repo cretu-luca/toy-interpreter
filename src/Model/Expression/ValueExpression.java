@@ -11,7 +11,7 @@ public class ValueExpression implements IExpression {
     }
 
     @Override
-    public IValue evaluate(ISymbolTable symbolTable) {
+    public IValue evaluate(ISymbolTable symbolTable, IHeapTable heapTable) {
         return value;
     }
     

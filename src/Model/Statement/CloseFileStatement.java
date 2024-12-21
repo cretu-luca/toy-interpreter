@@ -3,6 +3,8 @@ package Model.Statement;
 import Model.Exception.GenericException;
 import Model.Expression.IExpression;
 import Model.State.IFileTable;
+import Model.State.IHeapTable;
+import Model.State.ISymbolTable;
 import Model.State.ProgramState;
 import Model.Value.IValue;
 import Model.Value.StringValue;
@@ -16,9 +18,12 @@ public class CloseFileStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
+        ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
+        
         IValue fileNameValue;
         try {
-            fileNameValue = this.fileName.evaluate(state.getSymbolTable());
+            fileNameValue = this.fileName.evaluate(symbolTable, heapTable);
         } catch (GenericException e) {
             throw new GenericException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
         }

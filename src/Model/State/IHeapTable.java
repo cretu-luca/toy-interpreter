@@ -4,7 +4,9 @@ import Model.Exception.GenericException;
 import Model.Value.*;
 
 public interface IHeapTable {
-    int allocate(IValue referencedValue);
+    Integer allocate(IValue referencedValue);
     void deallocate(Integer address);
+    void update(Integer address, IValue referencedValue);
+    Boolean isAddressDefined(Integer address);
     IValue get(Integer address) throws GenericException;
 }

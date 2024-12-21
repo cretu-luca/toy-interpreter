@@ -5,6 +5,7 @@ import Model.Type.*;
 import Model.Value.*;
 import Model.Expression.*;
 import Model.State.ProgramState;
+import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 
 public class AssignmentStatement implements IStatement {
@@ -19,9 +20,10 @@ public class AssignmentStatement implements IStatement {
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
         ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
 
         if(symbolTable.isDefined(variableName)) {
-            IValue value = expression.evaluate(symbolTable);
+            IValue value = expression.evaluate(symbolTable, heapTable);
             IType type = symbolTable.get(variableName).getType();
 
             if(value.getType().equals(type)) {

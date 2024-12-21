@@ -4,7 +4,6 @@ import Model.Exception.*;
 import Model.Value.*;
 import Model.Expression.*;
 import Model.State.*;
-import Model.State.ProgramState;
 
 public class PrintStatement implements IStatement {
     IExpression expressionToPrint;
@@ -17,8 +16,9 @@ public class PrintStatement implements IStatement {
     public ProgramState execute(ProgramState state) throws GenericException {
         IOutput output = state.getOutput();
         ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
 
-        IValue value = expressionToPrint.evaluate(symbolTable);
+        IValue value = expressionToPrint.evaluate(symbolTable, heapTable);
         output.add(value);
 
         return state;

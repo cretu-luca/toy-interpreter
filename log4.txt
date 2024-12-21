@@ -5,19 +5,19 @@
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
+v --> (1, int)
 
 
 ====== File Table =====
 Empty symbol table
 
 ====== Heap Table =====
-Empty symbol table
+1 --> 30
+
 
 ======== Output =======
-10
 20
+35
 
 -----------------------------------
 

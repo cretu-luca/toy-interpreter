@@ -42,6 +42,10 @@ public class ProgramState {
         return this.fileTable;
     }
 
+    public IHeapTable getHeapTable() {
+        return this.heapTable;
+    }
+
     @Override
     public String toString() {
         return "\n---------- Program State ----------" +

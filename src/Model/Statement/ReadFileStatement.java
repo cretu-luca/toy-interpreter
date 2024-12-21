@@ -22,6 +22,7 @@ public class ReadFileStatement implements IStatement {
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
         ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
 
         if(!symbolTable.isDefined(variableName)) {
             throw new GenericException("ReadFileStatement error: variable " + this.variableName + " was not declared.");
@@ -39,7 +40,7 @@ public class ReadFileStatement implements IStatement {
         }
 
         IFileTable fileTable = state.getFileTable();
-        IValue fileNameValue = this.fileName.evaluate(symbolTable);
+        IValue fileNameValue = this.fileName.evaluate(symbolTable, heapTable);
         StringValue fileNameStringValue;
 
         try {

@@ -16,8 +16,17 @@ public class ReferenceValue implements IValue {
         return this.heapAddress;
     }
 
+    public IType getReferencedType() {
+        return this.referenceType;
+    }
+
     @Override
     public IType getType() {
         return new ReferenceType(referenceType);
+    }
+
+    @Override
+    public String toString() {
+        return "(" + this.heapAddress + ", " + this.referenceType + ")"; 
     }
 }

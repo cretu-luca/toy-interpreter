@@ -17,9 +17,12 @@ public class OpenFileStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws GenericException {
+        ISymbolTable symbolTable = state.getSymbolTable();
+        IHeapTable heapTable = state.getHeapTable();
+        
         IValue fileNameValue;
         try {
-            fileNameValue = this.fileName.evaluate(state.getSymbolTable());
+            fileNameValue = this.fileName.evaluate(symbolTable, heapTable);
         } catch (GenericException e) {
             throw new GenericException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
         }
