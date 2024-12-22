@@ -133,6 +133,30 @@ public class Interpreter {
         );
     }
 
+    private static IStatement createExample7() {
+        return new CompoundStatement(
+            new VariableDeclarationStatement("v", new IntType()),
+            new CompoundStatement(
+                new AssignmentStatement("v", new ValueExpression(new IntValue(10))),
+                new CompoundStatement(
+                    new ForkStatement(
+                        new CompoundStatement(
+                            new AssignmentStatement("v", 
+                                new ArithmeticExpression(
+                                    new VariableExpression("v"), 
+                                    new ValueExpression(new IntValue(1)), 
+                                    "+"
+                                )
+                            ),
+                            new PrintStatement(new VariableExpression("v"))
+                        )
+                    ),
+                    new PrintStatement(new VariableExpression("v"))
+                )
+            )
+        );
+    }
+
     private static ProgramState createProgramState(IStatement originalProgram) {
         IExecutionStack executionStack = new ExecutionStack();
         ISymbolTable symbolTable = new SymbolTable();
@@ -159,6 +183,7 @@ public class Interpreter {
             IStatement example4 = createExample4();
             IStatement example5 = createExample5();
             IStatement example6 = createExample6();
+            IStatement example7 = createExample7();
 
             menu.addCommand(new RunCommand("1", "int a; int b; a = 2 + 3 * 5; b = a + 1; print(b)", createController(example1, "log1.txt")));
             menu.addCommand(new RunCommand("2", "bool a; int v; a = true; if a then v = 2 else v = 3; print(v)", createController(example2, "log2.txt")));
@@ -166,6 +191,7 @@ public class Interpreter {
             menu.addCommand(new RunCommand("4", "Ref int v; new(v, 20); print(readHeap(v)); writeHeap(v,30); print(readHeap(v) + 5);", createController(example4, "log4.txt")));
             menu.addCommand(new RunCommand("5", "Ref int v; new(v, 20); Ref int a; new(a, 30); print(readHeap(v))", createController(example5, "log5.txt")));
             menu.addCommand(new RunCommand("6", "int v; v = 4; while(v > 0) { print(v), v = v - 1 }; print(v);", createController(example6, "log6.txt")));
+            menu.addCommand(new RunCommand("7", "fork", createController(example7, "log7.txt")));
 
             menu.addCommand(new ExitCommand("0", "Exit"));
             

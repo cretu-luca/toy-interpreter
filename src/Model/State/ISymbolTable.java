@@ -1,6 +1,7 @@
 package Model.State;
 
 import java.util.Collection;
+import java.util.Map;
 
 import Model.Value.*;
 
@@ -10,4 +11,6 @@ public interface ISymbolTable {
     Collection<IValue> getValues();
     IValue get(String variableName);
     Boolean isDefined(String variableName);
+    ISymbolTable deepCopy();
+    Map<String, IValue> getContent();
 } 

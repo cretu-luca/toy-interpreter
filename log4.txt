@@ -1,28 +1,5 @@
 
----------- Program State ----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-v --> (1, int)
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-1 --> 30
-
-
-======== Output =======
-20
-35
-
------------------------------------
-
-
----------- Program State ----------
+---------- Program State <4>----------
 
 === Execution Stack ===
 ( Ref(int) v; ( new(v, 20); ( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5)))))
@@ -42,7 +19,7 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
 
 === Execution Stack ===
 Ref(int) v
@@ -63,7 +40,28 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+Ref(int) v
+( new(v, 20); ( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5))))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 ( new(v, 20); ( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5))))
@@ -84,7 +82,28 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+( new(v, 20); ( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5))))
+
+
+===== Symbol Table ====
+v --> (0, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 new(v, 20)
@@ -106,7 +125,29 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+new(v, 20)
+( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5)))
+
+
+===== Symbol Table ====
+v --> (0, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 ( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5)))
@@ -128,7 +169,29 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+( print(readHeap(v)); ( writeHeap(v, 30); print(readHeap(v) + 5)))
+
+
+===== Symbol Table ====
+v --> (1, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+1 --> 20
+
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 print(readHeap(v))
@@ -151,7 +214,30 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+print(readHeap(v))
+( writeHeap(v, 30); print(readHeap(v) + 5))
+
+
+===== Symbol Table ====
+v --> (1, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+1 --> 20
+
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 ( writeHeap(v, 30); print(readHeap(v) + 5))
@@ -174,7 +260,30 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+( writeHeap(v, 30); print(readHeap(v) + 5))
+
+
+===== Symbol Table ====
+v --> (1, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+1 --> 20
+
+
+======== Output =======
+20
+
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 writeHeap(v, 30)
@@ -198,7 +307,31 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+writeHeap(v, 30)
+print(readHeap(v) + 5)
+
+
+===== Symbol Table ====
+v --> (1, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+1 --> 20
+
+
+======== Output =======
+20
+
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 print(readHeap(v) + 5)
@@ -221,7 +354,30 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <4>----------
+
+=== Execution Stack ===
+print(readHeap(v) + 5)
+
+
+===== Symbol Table ====
+v --> (1, int)
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+1 --> 30
+
+
+======== Output =======
+20
+
+-----------------------------------
+
+
+---------- Program State <4>----------
 
 === Execution Stack ===
 

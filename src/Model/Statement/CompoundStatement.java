@@ -1,6 +1,8 @@
 package Model.Statement;
 
-import Model.State.ProgramState;
+import Model.Type.IType;
+import Utils.Dictionary.IMyDictionary;
+import Model.Exception.GenericException;
 import Model.State.*; 
 
 public class CompoundStatement implements IStatement {
@@ -23,5 +25,10 @@ public class CompoundStatement implements IStatement {
     @Override
     public String toString() {
         return "( " + firstStatement.toString() + "; " + secondStatement.toString() + ")";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        return secondStatement.typeCheck(firstStatement.typeCheck(typeEnv));
     }
 }

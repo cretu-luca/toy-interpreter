@@ -1,9 +1,9 @@
 package Model.Statement;
 
-import Model.State.ProgramState;
 import Model.Exception.*;
 import Model.State.*;
 import Model.Type.*;
+import Utils.Dictionary.IMyDictionary;
 
 public class VariableDeclarationStatement implements IStatement {    
     private final String variableName;
@@ -30,5 +30,11 @@ public class VariableDeclarationStatement implements IStatement {
     @Override
     public String toString() {
         return this.variableType + " " + this.variableName;
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        typeEnv.add(variableName, variableType);
+        return typeEnv;
     }
 }

@@ -3,6 +3,7 @@ package Model.Statement;
 import Model.Exception.*;
 import Model.Type.*;
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 import Model.Expression.*;
 import Model.State.ProgramState;
 import Model.State.IHeapTable;
@@ -38,5 +39,15 @@ public class AssignmentStatement implements IStatement {
     public String toString() {
         return this.variableName + " = " + expression.toString();
     }
-    
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType variableType = typeEnv.get(variableName);
+        IType expressionType = expression.typeCheck(typeEnv);
+        
+        if (variableType.equals(expressionType))
+            return typeEnv;
+        else
+            throw new GenericException("AssignmentStatement: right hand side and left hand side have different types ");
+    }
 }

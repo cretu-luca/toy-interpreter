@@ -33,4 +33,8 @@ public class IntValue implements IValue {
         return this.value == anotherValue.value;
     }
 
+    @Override
+    public IValue deepCopy() {
+        return new IntValue(this.value);
+    }
 }

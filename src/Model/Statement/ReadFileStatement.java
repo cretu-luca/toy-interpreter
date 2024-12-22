@@ -7,8 +7,10 @@ import Model.Exception.GenericException;
 import Model.Expression.*;
 import Model.Type.IType;
 import Model.Type.IntType;
+import Model.Type.StringType;
 import Model.State.*;
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 
 public class ReadFileStatement implements IStatement {
     private final IExpression fileName;
@@ -79,5 +81,20 @@ public class ReadFileStatement implements IStatement {
     @Override
     public String toString() {
         return "readFile(" + fileName + ", " + variableName + ")";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType expressionType = fileName.typeCheck(typeEnv);
+        IType variableType = typeEnv.get(variableName);
+        
+        if (!expressionType.equals(new StringType())) {
+            throw new GenericException("ReadFileStatement error: filename must be a string");
+        }
+        if (!variableType.equals(new IntType())) {
+            throw new GenericException("ReadFileStatement error: variable must be integer");
+        }
+        
+        return typeEnv;
     }   
 }

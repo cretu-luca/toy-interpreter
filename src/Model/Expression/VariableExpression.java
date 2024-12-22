@@ -1,7 +1,10 @@
 package Model.Expression;
 
+import Model.Exception.GenericException;
 import Model.State.*;
+import Model.Type.IType;
 import Model.Value.*;
+import Utils.Dictionary.*;
 
 public class VariableExpression implements IExpression {
     private final String variableName;
@@ -19,4 +22,9 @@ public class VariableExpression implements IExpression {
     public String toString() {
         return variableName.toString();
     }
-}
+
+    @Override
+    public IType typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        return typeEnv.get(variableName);
+    }
+}   

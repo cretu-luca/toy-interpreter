@@ -32,4 +32,9 @@ public class BooleanValue implements IValue {
         BooleanValue anotherValue = (BooleanValue) another;
         return this.value == anotherValue.value;
     }
+
+    @Override
+    public IValue deepCopy() {
+        return new BooleanValue(this.value);
+    }
 }

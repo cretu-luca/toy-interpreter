@@ -6,7 +6,10 @@ import Model.Exception.*;
 import Model.Expression.*;
 import Model.Value.IValue;
 import Model.Value.StringValue;
+import Utils.Dictionary.IMyDictionary;
 import Model.State.*;
+import Model.Type.IType;
+import Model.Type.StringType;
 
 public class OpenFileStatement implements IStatement {
     private final IExpression fileName;
@@ -44,5 +47,13 @@ public class OpenFileStatement implements IStatement {
     @Override
     public String toString() {
         return "open(" + this.fileName.toString() + ")";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType expressionType = fileName.typeCheck(typeEnv);
+        if (expressionType.equals(new StringType())) {
+            return typeEnv;
+        } else throw new GenericException("OpenFileStatement error: filename must be a string");
     }
 }

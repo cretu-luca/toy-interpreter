@@ -2,62 +2,89 @@ package Controller;
 
 import Repository.IRepository;
 import Utils.Dictionary.IMyDictionary;
-
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.stream.Collectors;
-
+import Utils.Dictionary.MyDictionary;
 import Model.Exception.GenericException;
-import Model.Statement.IStatement;
+import Model.State.ProgramState;
+import Model.Type.IType;
 import Model.Value.IValue;
-import Model.State.*;
+
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repository;
+    private ExecutorService executor;
     private GarbageCollector garbageCollector;
 
     public Controller(IRepository repository) {
-        this.repository = repository;
-        this.garbageCollector = new GarbageCollector();
+        try {
+            ProgramState programState = repository.getProgramsList().get(0);
+            
+            IMyDictionary<String, IType> typeEnv = new MyDictionary<>();
+            programState.getOriginalProgram().typeCheck(typeEnv);
+            
+            this.repository = repository;
+            this.executor = Executors.newFixedThreadPool(2);
+            this.garbageCollector = new GarbageCollector();
+            
+        } catch (GenericException e) {
+            throw new GenericException("Type checking failed: " + e.getMessage());
+        }
     }
-    
-    public void oneStepForAllPrograms(List<ProgramState> programsList) {
+
+    public void oneStepForAllPrograms(List<ProgramState> programsList) throws InterruptedException {
+        programsList.forEach(prg -> repository.logProgramState(prg));
+
         List<Callable<ProgramState>> callList = programsList.stream()
-                                                   .map((ProgramState p) -> (Callable<ProgramState>)(() -> { return p.oneStep(); }))
-                                                   .collect(Collectors.toList());
+                .map((ProgramState p) -> (Callable<ProgramState>)(() -> p.oneStep()))
+                .collect(Collectors.toList());
 
-        List<PrgState> newProgramsList = executor.invokeAll(callList).stream().map(future -> { try { return future.get();}
-        
-        
-        catch(GenericException e) ) {
-
-        }).filter(p -> p != null).collect(Collectors.toList())
+        List<ProgramState> newProgramsList = executor.invokeAll(callList).stream()
+                .map(future -> {
+                    try {
+                        return future.get();
+                    } catch (InterruptedException | ExecutionException e) {
+                        System.out.println(e.getMessage());
+                        return null;
+                    }
+                })
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
 
         programsList.addAll(newProgramsList);
+
+        programsList.forEach(prg -> {
+            List<Integer> addresses = garbageCollector.getAddrressesFromSymbolTable(
+                prg.getSymbolTable().getContent().values()
+            );
+            IMyDictionary<Integer, IValue> newHeap = garbageCollector.unsafeGarbageCollector(
+                addresses,
+                prg.getHeapTable().getContent()
+            );
+            prg.getHeapTable().setContent(newHeap);
+        });
+
+        programsList.forEach(prg -> repository.logProgramState(prg));
         repository.setProgramList(programsList);
     }
 
-    public void allSteps() throws GenericException {
-        ProgramState program = repository.getProgramState();
-        repository.logProgramState(program);    
-        System.out.println(program);
-
-        while(!program.getExecutionStack().isEmpty()) {
-            program.oneStep();
-            
-            List<Integer> symbolTableAddresses = garbageCollector.getAddrressesFromSymbolTable(
-                program.getSymbolTable().getValues()
-            );
-            
-            IMyDictionary<Integer, IValue> newHeap = garbageCollector.unsafeGarbageCollector(
-                symbolTableAddresses,
-                program.getHeapTable().getContent()
-            );
-            
-            program.getHeapTable().setContent(newHeap);
-          
-            System.out.println(program);
-            repository.logProgramState(program);
+    public void allSteps() throws InterruptedException {
+        executor = Executors.newFixedThreadPool(2);
+        List<ProgramState> programsList = removeCompletedPrograms(repository.getProgramsList());
+    
+        while(programsList.size() > 0) {
+            oneStepForAllPrograms(programsList);
+            programsList = removeCompletedPrograms(repository.getProgramsList());
         }
+        
+        executor.shutdownNow();
+        repository.setProgramList(programsList);
+    }
+
+    public List<ProgramState> removeCompletedPrograms(List<ProgramState> inProgramList) {
+        return inProgramList.stream()
+                .filter(p -> !p.isComplete())
+                .collect(Collectors.toList());
     }
 }

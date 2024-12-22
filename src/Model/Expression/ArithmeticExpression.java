@@ -1,9 +1,9 @@
 package Model.Expression;
 
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 import Model.Exception.GenericException;
 import Model.State.*;
-import Model.State.ISymbolTable;
 import Model.Type.*;
 
 public class ArithmeticExpression implements IExpression {
@@ -45,5 +45,17 @@ public class ArithmeticExpression implements IExpression {
     @Override
     public String toString() {
         return this.firstExpression + " " + operator + " " + this.secondExpression;
+    }
+
+    @Override
+    public IType typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType firstType, secondType;
+        firstType = firstExpression.typeCheck(typeEnv);
+        secondType = secondExpression.typeCheck(typeEnv);
+        if(firstType.equals(new IntType())) {
+            if(secondType.equals(new IntType())) {
+                return new IntType();
+            } else throw new GenericException("Second operand is not an integer.");
+        } else throw new GenericException("First operand is not an integer.");
     }
 }

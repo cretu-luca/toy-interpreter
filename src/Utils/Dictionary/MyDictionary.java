@@ -1,11 +1,15 @@
 package Utils.Dictionary;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 import Model.Exception.GenericException;
+import Model.State.ISymbolTable;
+import Model.State.SymbolTable;
+import Model.Value.IValue;
 
 public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     private HashMap<K,V> dictionary;
@@ -40,6 +44,11 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     @Override
     public Set<K> keySet() {
         return this.dictionary.keySet();
+    }
+
+    @Override
+    public Map<K,V> getContent() {
+        return Collections.unmodifiableMap(new HashMap<>(this.dictionary));
     }
 
     @Override

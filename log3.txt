@@ -1,28 +1,5 @@
 
----------- Program State ----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State ----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
@@ -42,7 +19,7 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 String file
@@ -63,7 +40,28 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+String file
+( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
@@ -84,7 +82,28 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+
+
+===== Symbol Table ====
+file --> 
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 file = test.in
@@ -106,7 +125,29 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+file = test.in
+( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
+
+
+===== Symbol Table ====
+file --> 
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
@@ -127,7 +168,28 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
+
+
+===== Symbol Table ====
+file --> test.in
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 open(file)
@@ -149,7 +211,29 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+open(file)
+( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
+
+
+===== Symbol Table ====
+file --> test.in
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
@@ -160,7 +244,7 @@ file --> test.in
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -171,7 +255,29 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
+
+
+===== Symbol Table ====
+file --> test.in
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 int v
@@ -183,7 +289,7 @@ file --> test.in
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -194,7 +300,30 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+int v
+( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
+
+
+===== Symbol Table ====
+file --> test.in
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
@@ -206,7 +335,7 @@ v --> 0
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -217,7 +346,30 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 0
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 readFile(file, v)
@@ -230,7 +382,7 @@ v --> 0
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -241,7 +393,31 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+readFile(file, v)
+( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 0
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
@@ -253,7 +429,7 @@ v --> 10
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -264,7 +440,30 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 10
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 print(v)
@@ -277,7 +476,7 @@ v --> 10
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -288,7 +487,31 @@ Empty output
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+print(v)
+( readFile(file, v); ( print(v); closeFile(file)))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 10
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( readFile(file, v); ( print(v); closeFile(file)))
@@ -300,7 +523,7 @@ v --> 10
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -312,7 +535,31 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( readFile(file, v); ( print(v); closeFile(file)))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 10
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 readFile(file, v)
@@ -325,7 +572,7 @@ v --> 10
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -337,7 +584,32 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+readFile(file, v)
+( print(v); closeFile(file))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 10
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 ( print(v); closeFile(file))
@@ -349,7 +621,7 @@ v --> 20
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -361,7 +633,31 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+( print(v); closeFile(file))
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 20
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 print(v)
@@ -374,7 +670,7 @@ v --> 20
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -386,7 +682,32 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+print(v)
+closeFile(file)
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 20
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 closeFile(file)
@@ -398,7 +719,7 @@ v --> 20
 
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@4769b07b
+test.in --> java.io.BufferedReader@42110406
 
 
 ====== Heap Table =====
@@ -411,7 +732,32 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State ----------
+---------- Program State <3>----------
+
+=== Execution Stack ===
+closeFile(file)
+
+
+===== Symbol Table ====
+file --> test.in
+v --> 20
+
+
+====== File Table =====
+test.in --> java.io.BufferedReader@42110406
+
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+20
+
+-----------------------------------
+
+
+---------- Program State <3>----------
 
 === Execution Stack ===
 

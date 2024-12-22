@@ -29,4 +29,23 @@ public class ExecutionStack implements IExecutionStack {
     public String toString() {
         return this.stack.toString();
     }
+
+    @Override
+    public IExecutionStack deepCopy() {
+        IExecutionStack newStack = new ExecutionStack();
+        MyStack<IStatement> tempStack = new MyStack<>();
+        
+        while(!this.isEmpty()) {
+            IStatement statement = this.pop();
+            tempStack.push(statement);
+        }
+
+        while(!tempStack.isEmpty()) {
+            IStatement statement = tempStack.pop();
+            newStack.push(statement);
+            this.push(statement);
+        }
+        
+        return newStack;
+    }
 }

@@ -2,7 +2,9 @@ package Model.Expression;
 
 import Model.Exception.GenericException;
 import Model.State.*;
+import Model.Type.*;
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 
 public class ReadHeapExpression implements IExpression {
     private final IExpression expression; 
@@ -31,5 +33,14 @@ public class ReadHeapExpression implements IExpression {
     @Override
     public String toString() {
         return "readHeap(" + expression.toString() + ")";
+    }
+
+    @Override
+    public IType typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType type = expression.typeCheck(typeEnv);
+        if (type instanceof ReferenceType) {
+            ReferenceType referenceType =(ReferenceType) type;
+            return referenceType.getType(); 
+        } else throw new GenericException("the readHeap argument is not a reference value");
     }
 }

@@ -3,7 +3,10 @@ package Model.Statement;
 import Model.Exception.*;
 import Model.Expression.*;
 import Model.State.*;
+import Model.Type.BooleanType;
+import Model.Type.IType;
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 
 public class IfStatement implements IStatement {
     private final IExpression condition;
@@ -41,5 +44,15 @@ public class IfStatement implements IStatement {
     @Override
     public String toString() {
         return "(if("+ condition.toString()+") then(" +thenBranch.toString() +") else("+elseBranch.toString()+"))";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType expressionType = condition.typeCheck(typeEnv);
+        if (expressionType.equals(new BooleanType())) {
+            thenBranch.typeCheck(typeEnv);
+            elseBranch.typeCheck(typeEnv);
+            return typeEnv;
+        } else throw new GenericException("The condition of IF has not the type bool");
     }
 }

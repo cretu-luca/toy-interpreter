@@ -29,4 +29,9 @@ public class ReferenceValue implements IValue {
     public String toString() {
         return "(" + this.heapAddress + ", " + this.referenceType + ")"; 
     }
+
+    @Override
+    public IValue deepCopy() {
+        return new ReferenceValue(this.heapAddress, this.referenceType);
+    }
 }

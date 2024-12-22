@@ -1,8 +1,8 @@
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( int a; ( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b)))))
+( int v; ( v = 10; ( fork( v = v + 1; print(v)); print(v))))
 
 
 ===== Symbol Table ====
@@ -19,11 +19,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-int a
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+int v
+( v = 10; ( fork( v = v + 1; print(v)); print(v)))
 
 
 ===== Symbol Table ====
@@ -40,11 +40,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-int a
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+int v
+( v = 10; ( fork( v = v + 1; print(v)); print(v)))
 
 
 ===== Symbol Table ====
@@ -61,14 +61,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+( v = 10; ( fork( v = v + 1; print(v)); print(v)))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> 0
 
 
 ====== File Table =====
@@ -82,14 +82,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( int b; ( a = 2 + 3 * 5; ( b = a + 1; print(b))))
+( v = 10; ( fork( v = v + 1; print(v)); print(v)))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> 0
 
 
 ====== File Table =====
@@ -103,15 +103,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-int b
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+v = 10
+( fork( v = v + 1; print(v)); print(v))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> 0
 
 
 ====== File Table =====
@@ -125,15 +125,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-int b
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+v = 10
+( fork( v = v + 1; print(v)); print(v))
 
 
 ===== Symbol Table ====
-a --> 0
+v --> 0
 
 
 ====== File Table =====
@@ -147,15 +147,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+( fork( v = v + 1; print(v)); print(v))
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -169,15 +168,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( a = 2 + 3 * 5; ( b = a + 1; print(b)))
+( fork( v = v + 1; print(v)); print(v))
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -191,16 +189,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-a = 2 + 3 * 5
-( b = a + 1; print(b))
+fork( v = v + 1; print(v))
+print(v)
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -214,16 +211,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-a = 2 + 3 * 5
-( b = a + 1; print(b))
+fork( v = v + 1; print(v))
+print(v)
 
 
 ===== Symbol Table ====
-a --> 0
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -237,15 +233,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-( b = a + 1; print(b))
+print(v)
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -259,15 +254,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <8>----------
 
 === Execution Stack ===
-( b = a + 1; print(b))
+( v = v + 1; print(v))
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -281,16 +275,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-b = a + 1
-print(b)
+print(v)
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -304,16 +296,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <8>----------
 
 === Execution Stack ===
-b = a + 1
-print(b)
+( v = v + 1; print(v))
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 0
+v --> 10
 
 
 ====== File Table =====
@@ -327,15 +317,13 @@ Empty output
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <7>----------
 
 === Execution Stack ===
-print(b)
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+v --> 10
 
 
 ====== File Table =====
@@ -345,19 +333,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+10
+
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <8>----------
 
 === Execution Stack ===
-print(b)
+v = v + 1
+print(v)
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+v --> 10
 
 
 ====== File Table =====
@@ -367,18 +356,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+10
+
 -----------------------------------
 
 
----------- Program State <1>----------
+---------- Program State <8>----------
 
 === Execution Stack ===
+v = v + 1
+print(v)
 
 
 ===== Symbol Table ====
-a --> 17
-b --> 18
+v --> 10
 
 
 ====== File Table =====
@@ -388,7 +379,73 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-18
+10
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
 
 -----------------------------------
 

@@ -3,10 +3,13 @@ package Model.Expression;
 import Model.Exception.GenericException;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
+import Model.Type.BooleanType;
+import Model.Type.IType;
 import Model.Type.IntType;
 import Model.Value.BooleanValue;
 import Model.Value.IValue;
 import Model.Value.IntValue;
+import Utils.Dictionary.IMyDictionary;
 
 public class RelationalExpression implements IExpression {
     private final IExpression firstExpression;
@@ -44,5 +47,17 @@ public class RelationalExpression implements IExpression {
     @Override
     public String toString() {
         return this.firstExpression + " " + operator + " " + this.secondExpression;
+    }
+
+     @Override
+    public IType typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType type1 = firstExpression.typeCheck(typeEnv);
+        IType type2 = secondExpression.typeCheck(typeEnv);
+        
+        if (type1.equals(new IntType()) && type2.equals(new IntType())) {
+            return new BooleanType();
+        } else {
+            throw new GenericException("RelationalExpression: operands must be integers");
+        }
     }
 }

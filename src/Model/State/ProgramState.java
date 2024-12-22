@@ -9,7 +9,9 @@ public class ProgramState {
     private IFileTable fileTable;
     private IOutput output;
     private IHeapTable heapTable;
-    private static Integer ID;
+    private static Integer globalID = 1;
+    private final int id;
+    private IStatement originalProgram;
 
     public ProgramState(IExecutionStack newExecutionStack,
                         ISymbolTable newSymbolTable,
@@ -23,21 +25,27 @@ public class ProgramState {
         this.output = newOutput;
         this.fileTable = newFileTable;
         this.heapTable = newHeapTable;
-
-        // originalProgram = newProgram;
+        this.id = this.getNextID();
+        this.originalProgram = newProgram;
         this.executionStack.push(newProgram);
     }
 
     private static synchronized int getNextID() {
-        return ID++;
+        return globalID++;
     }
 
     public ProgramState oneStep() {
         if(executionStack.isEmpty())
             throw new GenericException("ProgramState error: executionStack is empty");
 
+        System.out.println(this);
+
         IStatement statement = executionStack.pop();
         return statement.execute(this);
+    }
+
+    public IStatement getOriginalProgram() {
+        return originalProgram;
     }
 
     public Boolean isComplete() {
@@ -62,6 +70,10 @@ public class ProgramState {
 
     public IHeapTable getHeapTable() {
         return this.heapTable;
+    }
+
+    public Integer getID() {
+        return this.id;
     }
 
     @Override

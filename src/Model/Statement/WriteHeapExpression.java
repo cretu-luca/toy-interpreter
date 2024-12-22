@@ -4,8 +4,11 @@ import Model.Exception.GenericException;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.State.ProgramState;
+import Model.Type.IType;
+import Model.Type.ReferenceType;
 import Model.Value.IValue;
 import Model.Value.ReferenceValue;
+import Utils.Dictionary.IMyDictionary;
 import Model.Expression.*;
 
 public class WriteHeapExpression implements IStatement {
@@ -51,5 +54,25 @@ public class WriteHeapExpression implements IStatement {
     @Override
     public String toString() {
         return "writeHeap(" + this.variableName + ", " + this.expression + ")"; 
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType variableType = typeEnv.get(variableName);
+    
+        if (!(variableType instanceof ReferenceType)) {
+            throw new GenericException("WriteHeapExpression error: " + variableName + " is not of reference type");
+        }
+        
+        ReferenceType refType = (ReferenceType) variableType;
+        IType referencedType = refType.getType();
+        
+        IType expressionType = expression.typeCheck(typeEnv);
+        
+        if (expressionType.equals(referencedType)) {
+            return typeEnv;
+        } else {
+            throw new GenericException("WriteHeapExpression error: type mismatch between " + referencedType + " and " + expressionType);
+        }
     }
 }

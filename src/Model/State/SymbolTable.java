@@ -1,6 +1,7 @@
 package Model.State;
 
 import java.util.Collection;
+import java.util.Map;
 
 import Model.Value.IValue;
 import Utils.Dictionary.*;
@@ -40,5 +41,21 @@ public class SymbolTable implements ISymbolTable {
     @Override
     public Collection<IValue> getValues() {
         return this.dictionary.getValues();
+    }
+
+    @Override
+    public ISymbolTable deepCopy() {
+        ISymbolTable newSymbolTable = new SymbolTable();
+        for(String key : this.dictionary.keySet()) {
+            IValue value = this.dictionary.get(key);
+            newSymbolTable.add(key, value.deepCopy());
+        }
+        
+        return newSymbolTable;
+    }
+
+    @Override
+    public Map<String, IValue> getContent() {
+        return dictionary.getContent();
     }
 }

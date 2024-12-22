@@ -6,8 +6,11 @@ import Model.State.IFileTable;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.State.ProgramState;
+import Model.Type.IType;
+import Model.Type.StringType;
 import Model.Value.IValue;
 import Model.Value.StringValue;
+import Utils.Dictionary.IMyDictionary;
 
 public class CloseFileStatement implements IStatement {
     public final IExpression fileName;
@@ -52,5 +55,13 @@ public class CloseFileStatement implements IStatement {
     @Override
     public String toString() {
         return "closeFile(" + fileName + ")";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType expressionType = fileName.typeCheck(typeEnv);
+        if (expressionType.equals(new StringType())) {
+            return typeEnv;
+        } else throw new GenericException("CloseFileStatement error: filename must be a string.");
     }
 }

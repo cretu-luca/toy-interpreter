@@ -1,6 +1,7 @@
 package Model.Expression;
 
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 import Model.Type.*;
 import Model.Exception.*;
 import Model.State.*;
@@ -33,5 +34,17 @@ public class LogicExpression implements IExpression {
                 }
             } else throw new GenericException("Second operand is not boolean value.");
         } else throw new GenericException("First operand is not boolean value.");
+    }
+
+    @Override
+    public IType typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType firstType, secondType;
+        firstType = firstExpression.typeCheck(typeEnv);
+        secondType = secondExpression.typeCheck(typeEnv);
+        if(firstType.equals(new BooleanType())) {
+            if(secondType.equals(new BooleanType())) {
+                return new BooleanType();
+            } else throw new GenericException("Second operand is not a boolean value.");
+        } else throw new GenericException("First operand is not an a boolean value.");
     }
 }

@@ -6,8 +6,11 @@ import Model.State.IExecutionStack;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.State.ProgramState;
+import Model.Type.BooleanType;
+import Model.Type.IType;
 import Model.Value.BooleanValue;
 import Model.Value.IValue;
+import Utils.Dictionary.IMyDictionary;
 
 public class WhileStatement implements IStatement {
     private final IExpression expression;
@@ -41,5 +44,16 @@ public class WhileStatement implements IStatement {
     @Override
     public String toString() {
         return "while(" + this.expression + ") " + this.statement;
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType expressionType = expression.typeCheck(typeEnv);
+        if (expressionType instanceof BooleanType) {
+            statement.typeCheck(typeEnv);
+            return typeEnv;
+        } else {
+            throw new GenericException("WhileStatement: condition must be boolean");
+        }
     }
 }

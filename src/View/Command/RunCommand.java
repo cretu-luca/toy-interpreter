@@ -17,6 +17,8 @@ public class RunCommand extends ACommand {
             controller.allSteps();
         } catch (GenericException e) {
             System.err.println(e.getMessage());
-        } 
+        } catch (InterruptedException e) {
+            System.err.println(e.getMessage());
+        }
     }
 }

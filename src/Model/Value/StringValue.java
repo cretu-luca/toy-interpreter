@@ -32,4 +32,9 @@ public class StringValue implements IValue {
         StringValue anotherValue = (StringValue) another;
         return this.value == anotherValue.value;
     }
+
+    @Override
+    public IValue deepCopy() {
+        return new StringValue(this.value);
+    }
 }

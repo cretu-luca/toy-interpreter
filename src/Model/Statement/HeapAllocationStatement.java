@@ -4,6 +4,7 @@ import Model.Exception.GenericException;
 import Model.Expression.*;
 import Model.State.*;
 import Model.Value.*;
+import Utils.Dictionary.IMyDictionary;
 import Model.Type.*;
 
 public class HeapAllocationStatement implements IStatement {
@@ -44,5 +45,16 @@ public class HeapAllocationStatement implements IStatement {
     @Override
     public String toString() {
         return "new(" + this.variableName + ", " + this.expression + ")";
+    }
+
+    @Override
+    public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
+        IType variableType = typeEnv.get(variableName);
+        IType expressionType = expression.typeCheck(typeEnv);
+        
+        if (variableType.equals(new ReferenceType(expressionType))) {
+            return typeEnv;
+        } else 
+            throw new GenericException("HeapAllocationStatement error: right hand side and left hand side have different types.");
     }
 }
