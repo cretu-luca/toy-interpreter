@@ -44,4 +44,9 @@ public class Repository implements IRepository {
             throw new GenericException("Error logging program state: " + e.getMessage());
         }
     }
+
+    @Override
+    public ProgramState getProgramById(int id) {
+        return programStates.stream().filter(p -> p.getID() == id).findFirst().orElse(null);
+    }
 }

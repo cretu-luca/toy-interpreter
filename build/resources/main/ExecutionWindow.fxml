@@ -16,7 +16,7 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <Text layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState's:" wrappingWidth="280.16259765625">
+      <Text fx:id="programStateCounter" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState's:" wrappingWidth="280.16259765625">
          <font>
             <Font size="18.0" />
          </font>

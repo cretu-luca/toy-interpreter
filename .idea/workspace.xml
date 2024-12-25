@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50426a09-44f8-4bcc-933c-acd585334cd6" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GUIMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" afterDir="false" />
@@ -16,45 +15,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Repository/IRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Repository/IRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Repository/Repository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/GUI/ExecutionWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/GUI/ExecutionWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/GUI/GUIApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/GUI/StartWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/GUI/StartWindowController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/Program.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/ProgramsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/ProgramsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/TextMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/distributions/toy-interpreter.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/toy-interpreter.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/distributions/toy-interpreter.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/toy-interpreter.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/toy-interpreter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/toy-interpreter.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/StartWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/toy-interpreter" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/toy-interpreter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/toy-interpreter.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/toy-interpreter.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ACommand.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExitCommand.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Interpreter.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/RunCommand.class.uniqueId5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TextMenu.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExecutionWindowController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExecutionWindowController.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/GUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/StartWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/StartWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ProgramsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ProgramsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StartWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +224,7 @@
       <workItem from="1734953466000" duration="44000" />
       <workItem from="1734953512780" duration="710000" />
       <workItem from="1734954239402" duration="10048000" />
-      <workItem from="1735123831969" duration="19717000" />
+      <workItem from="1735123831969" duration="22388000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

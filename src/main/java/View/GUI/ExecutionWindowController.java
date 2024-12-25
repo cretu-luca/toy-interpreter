@@ -13,12 +13,20 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ExecutionWindowController {
+    // things to add
+    // clear out all outputs after execution ends
+    // more exceptions
 
+    @FXML
+    public Text programStateCounter;
     @FXML
     private TableView<Map.Entry<Integer, IValue>> heapTableListView;
     @FXML
@@ -50,7 +58,10 @@ public class ExecutionWindowController {
 
     public void setCurrentProgram(Program program) {
         this.currentProgram = program;
-        updateProgramState();
+        if (program != null && !program.getController().getRepository().getProgramsList().isEmpty()) {
+            int defaultProgramStateId = program.getController().getRepository().getProgramsList().get(0).getID();
+            updateProgramState(defaultProgramStateId);
+        }
     }
 
     @FXML
@@ -63,18 +74,25 @@ public class ExecutionWindowController {
         variableNameColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getKey()));
         variableValueColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getValue().toString()));
 
-        updateProgramState();
+        programStateListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                int selectedProgramStateId = newValue;
+                updateProgramState(selectedProgramStateId);
+            }
+        });
     }
 
-    private void updateProgramState() {
-        if (currentProgram != null) {
-            ProgramState state = currentProgram.getCurrentProgramState();
-            heapTableListView.setItems(FXCollections.observableArrayList(state.getHeapTable().getContent().getContent().entrySet()));
-            symbolTableListView.setItems(FXCollections.observableArrayList(state.getSymbolTable().getContent().entrySet()));
-            outputListView.setItems(FXCollections.observableArrayList(state.getOutput().toString()));
-            fileTableListView.setItems(FXCollections.observableArrayList(state.getFileTable().toString()));
-            executionStackListView.setItems(FXCollections.observableArrayList(state.getExecutionStack().toString()));
-            programStateListView.setItems(FXCollections.observableArrayList(state.getID()));
+    private void updateProgramState(Integer selectedProgramStateId) {
+        if (currentProgram != null && selectedProgramStateId != null) {
+            ProgramState selectedState = currentProgram.getController().getRepository().getProgramById(selectedProgramStateId);
+            if (selectedState != null) {
+                heapTableListView.setItems(FXCollections.observableArrayList(selectedState.getHeapTable().getContent().getContent().entrySet()));
+                symbolTableListView.setItems(FXCollections.observableArrayList(selectedState.getSymbolTable().getContent().entrySet()));
+                outputListView.setItems(FXCollections.observableArrayList(selectedState.getOutput().toString()));
+                fileTableListView.setItems(FXCollections.observableArrayList(selectedState.getFileTable().toString()));
+                executionStackListView.setItems(FXCollections.observableArrayList(selectedState.getExecutionStack().toString()));
+                programStateCounter.setText(String.valueOf(currentProgram.getController().getRepository().getProgramsList().size()));
+            }
         }
     }
 
@@ -83,7 +101,22 @@ public class ExecutionWindowController {
         if (currentProgram != null) {
             try {
                 currentProgram.oneStep();
-                updateProgramState();
+                List<ProgramState> programStates = currentProgram.getController().getRepository().getProgramsList();
+                programStateListView.setItems(FXCollections.observableArrayList(programStates.stream().map(ProgramState::getID).collect(Collectors.toList())));
+                Integer selectedProgramStateId = programStateListView.getSelectionModel().getSelectedItem();
+
+                if (selectedProgramStateId != null) {
+                    updateProgramState(selectedProgramStateId);
+                }
+
+                if (currentProgram.getController().getRepository().getProgramsList().isEmpty()) {
+                    heapTableListView.getItems().clear();
+                    symbolTableListView.getItems().clear();
+                    outputListView.getItems().clear();
+                    fileTableListView.getItems().clear();
+                    executionStackListView.getItems().clear();
+                    programStateListView.getItems().clear();
+                }
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
                 Alert alert = new Alert(Alert.AlertType.ERROR);
