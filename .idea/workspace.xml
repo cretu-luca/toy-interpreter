@@ -5,20 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50426a09-44f8-4bcc-933c-acd585334cd6" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/toy-interpreter.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/StartWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StartWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CLI/TextMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/GUI/StartWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/ProgramsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/toy-interpreter.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Command/ACommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Command/ExitCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Command/RunCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/GUI/MainApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/TextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/TextMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/toy-interpreter.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/toy-interpreter.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/toy-interpreter.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/toy-interpreter.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/toy-interpreter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/toy-interpreter.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/StartWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/toy-interpreter" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/toy-interpreter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/toy-interpreter.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/toy-interpreter.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExecutionWindow.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MainApplication.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StartWindow.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
@@ -26,66 +55,14 @@
       <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/GarbageCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IGarbageCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IGarbageCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Exception/GenericException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/GenericException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/ArithmeticExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/ArithmeticExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/IExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/IExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/LogicExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/LogicExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/ReadHeapExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/ReadHeapExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/RelationalExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/RelationalExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/ValueExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/ValueExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expression/VariableExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/VariableExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/ExecutionStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/ExecutionStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/FileTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/HeapTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/HeapTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/IExecutionStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/IExecutionStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/IFileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/IFileTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/IHeapTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/IHeapTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/IOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/IOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/ISymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/ISymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/ProgramState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/ProgramState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/State/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/AssignmentStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/AssignmentStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/CloseFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/CloseFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/CompoundStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/CompoundStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/ForkStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/ForkStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/HeapAllocationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/HeapAllocationStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/IStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/IStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/IfStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/NopStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/NopStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/OpenFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/OpenFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/PrintStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/PrintStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/ReadFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/ReadFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/VariableDeclarationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/VariableDeclarationStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/WhileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/WhileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statement/WriteHeapExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/WriteHeapExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Type/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Type/BooleanType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Type/IType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Type/IType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Type/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Type/IntType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Type/ReferenceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Type/ReferenceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Type/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Type/StringType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Value/BooleanValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Value/BooleanValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Value/IValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Value/IValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Value/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Value/IntValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Value/ReferenceValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Value/ReferenceValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Value/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Value/StringValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Dictionary/IMyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Dictionary/IMyDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Dictionary/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Dictionary/MyDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/List/IMyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/List/IMyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/List/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/List/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Stack/IMyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Stack/IMyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Stack/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Stack/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Command/ACommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Command/ACommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Command/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Command/RunCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Command/RunCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/TextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/TextMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toy-interpreter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Command/ACommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Command/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Command/RunCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Interpreter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/TextMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StartWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StartWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +82,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="toy-interpreter" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -139,7 +121,9 @@
   "keyToString": {
     "Application.Interpreter.executor": "Run",
     "Gradle.Build toy-interpreter.executor": "Run",
+    "Gradle.toy-interpreter [:Main.main()].executor": "Run",
     "Gradle.toy-interpreter [:View.Interpreter.main()].executor": "Run",
+    "Gradle.toy-interpreter [:View.Main.main()].executor": "Run",
     "Gradle.toy-interpreter [build].executor": "Run",
     "Gradle.toy-interpreter [clean].executor": "Run",
     "Gradle.toy-interpreter [jar].executor": "Run",
@@ -148,13 +132,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/cretuluca/uni/toy-interpreter/src/main/java",
+    "last_opened_file_path": "/Users/cretuluca/uni/toy-interpreter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap",
@@ -166,11 +150,49 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/View/GUI" />
       <recent name="$PROJECT_DIR$/main/java" />
       <recent name="$PROJECT_DIR$/gradle/wrapper" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="View" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.toy-interpreter [run]">
+  <component name="RunManager" selected="Application.View.Main">
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.Interpreter" />
+      <module name="toy-interpreter.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.CLI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="toy-interpreter.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="View.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.Main" />
+      <module name="toy-interpreter.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.CLI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="toy-interpreter [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -183,28 +205,6 @@
         <option name="taskNames">
           <list>
             <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="toy-interpreter [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -239,9 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.View.Main" />
         <item itemvalue="Gradle.toy-interpreter [run]" />
         <item itemvalue="Gradle.toy-interpreter [build]" />
-        <item itemvalue="Gradle.toy-interpreter [clean]" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Interpreter" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +270,8 @@
       <workItem from="1734951913468" duration="1402000" />
       <workItem from="1734953466000" duration="44000" />
       <workItem from="1734953512780" duration="710000" />
-      <workItem from="1734954239402" duration="8016000" />
+      <workItem from="1734954239402" duration="10048000" />
+      <workItem from="1735123831969" duration="12096000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

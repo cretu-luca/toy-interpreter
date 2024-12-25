@@ -14,12 +14,20 @@ java {
 }
 
 application {
-    mainClass = 'View.GUI.MainApplication'
+    mainClass = 'Main'
 }
 
 javafx {
     version = '21'
     modules = ['javafx.controls', 'javafx.fxml']
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
 }
 
 dependencies {
