@@ -210,7 +210,7 @@ DEFAULT_JVM_OPTS=""
 
 set -- \
         -classpath "$CLASSPATH" \
-        Main \
+        View.GUI.GUIMenu \
         "$@"
 
 # Stop when "xargs" is not available.

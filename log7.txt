@@ -812,11 +812,53 @@ Empty symbol table
 -----------------------------------
 
 
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
 ---------- Program State <8>----------
 
 === Execution Stack ===
 v = v + 1
 print(v)
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
 
 
 ===== Symbol Table ====
@@ -857,6 +899,27 @@ Empty symbol table
 -----------------------------------
 
 
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
 ---------- Program State <8>----------
 
 === Execution Stack ===
@@ -875,6 +938,644 @@ Empty symbol table
 
 ======== Output =======
 10
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
 
 -----------------------------------
 
@@ -1263,11 +1964,53 @@ Empty symbol table
 -----------------------------------
 
 
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
 ---------- Program State <8>----------
 
 === Execution Stack ===
 v = v + 1
 print(v)
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
 
 
 ===== Symbol Table ====
@@ -1308,6 +2051,27 @@ Empty symbol table
 -----------------------------------
 
 
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+
+-----------------------------------
+
+
 ---------- Program State <8>----------
 
 === Execution Stack ===
@@ -1326,6 +2090,28 @@ Empty symbol table
 
 ======== Output =======
 10
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
 
 -----------------------------------
 
@@ -1355,324 +2141,6 @@ Empty symbol table
 ---------- Program State <7>----------
 
 === Execution Stack ===
-( int v; ( v = 10; ( fork( v = v + 1; print(v)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-int v
-( v = 10; ( fork( v = v + 1; print(v)); print(v)))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-int v
-( v = 10; ( fork( v = v + 1; print(v)); print(v)))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-( v = 10; ( fork( v = v + 1; print(v)); print(v)))
-
-
-===== Symbol Table ====
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-( v = 10; ( fork( v = v + 1; print(v)); print(v)))
-
-
-===== Symbol Table ====
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-v = 10
-( fork( v = v + 1; print(v)); print(v))
-
-
-===== Symbol Table ====
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-v = 10
-( fork( v = v + 1; print(v)); print(v))
-
-
-===== Symbol Table ====
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-( fork( v = v + 1; print(v)); print(v))
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-( fork( v = v + 1; print(v)); print(v))
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-fork( v = v + 1; print(v))
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-fork( v = v + 1; print(v))
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <8>----------
-
-=== Execution Stack ===
-( v = v + 1; print(v))
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <8>----------
-
-=== Execution Stack ===
-( v = v + 1; print(v))
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <7>----------
-
-=== Execution Stack ===
 
 
 ===== Symbol Table ====
@@ -1687,6 +2155,7 @@ Empty symbol table
 
 ======== Output =======
 10
+11
 
 -----------------------------------
 
@@ -1694,53 +2163,6 @@ Empty symbol table
 ---------- Program State <8>----------
 
 === Execution Stack ===
-v = v + 1
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <8>----------
-
-=== Execution Stack ===
-v = v + 1
-print(v)
-
-
-===== Symbol Table ====
-v --> 10
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <8>----------
-
-=== Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
@@ -1755,6 +2177,29 @@ Empty symbol table
 
 ======== Output =======
 10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
 
 -----------------------------------
 
@@ -1762,7 +2207,6 @@ Empty symbol table
 ---------- Program State <8>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
@@ -1777,6 +2221,337 @@ Empty symbol table
 
 ======== Output =======
 10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <8>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 11
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
+
+-----------------------------------
+
+
+---------- Program State <7>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 10
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+11
 
 -----------------------------------
 

@@ -14,7 +14,7 @@ java {
 }
 
 application {
-    mainClass = 'Main'
+    mainClass = 'View.GUI.GUIMenu'
 }
 
 javafx {

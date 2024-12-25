@@ -87,4 +87,8 @@ public class Controller {
                 .filter(p -> !p.isComplete())
                 .collect(Collectors.toList());
     }
+
+    public IRepository getRepository() {
+        return repository;
+    }
 }

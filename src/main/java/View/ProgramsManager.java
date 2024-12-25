@@ -23,13 +23,13 @@ public class ProgramsManager {
     }
 
     private void initializePrograms() {
-        addProgram("1", "int a; int b; a = 2 + 3 * 5; b = a + 1; print(b)", createExample1());
-        addProgram("2", "bool a; int v; a = true; if a then v = 2 else v = 3; print(v)", createExample2());
-        addProgram("3", "string file; file = test.in; openFile(file); int v; readFile(file, v); print(v); readFile(file, v); print(v); closeFile(file)", createExample3());
+        addProgram("1", "int a; int b; a = 2 + 3 * 5; b = a + 1; print(b);", createExample1());
+        addProgram("2", "bool a; int v; a = true; if(a){ then v = 2 } { else v = 3; } print(v);", createExample2());
+        addProgram("3", "string file; file = test.in; openFile(file); int v; readFile(file, v); print(v); readFile(file, v); print(v); closeFile(file);", createExample3());
         addProgram("4", "Ref int v; new(v, 20); print(readHeap(v)); writeHeap(v,30); print(readHeap(v) + 5);", createExample4());
-        addProgram("5", "Ref int v; new(v, 20); Ref int a; new(a, 30); print(readHeap(v))", createExample5());
+        addProgram("5", "Ref int v; new(v, 20); Ref int a; new(a, 30); print(readHeap(v));", createExample5());
         addProgram("6", "int v; v = 4; while(v > 0) { print(v), v = v - 1 }; print(v);", createExample6());
-        addProgram("7", "fork", createExample7());
+        addProgram("7", "int v; v = 10; fork{ v = v + 1, print(v) }, print(v);", createExample7());
     }
 
     private void addProgram(String key, String description, IStatement statement) {

@@ -7,5 +7,8 @@ public class Main {
         ProgramsManager programsManager = new ProgramsManager();
         TextMenu textMenu = new TextMenu(programsManager);
         textMenu.show();
+
+        // GUI gui = new GUI();
+
     }
 }

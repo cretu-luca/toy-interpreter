@@ -1,61 +1,50 @@
 package View;
 
+import Controller.Controller;
+import Model.Statement.*;
 import Model.State.*;
-import Model.Statement.IStatement;
-import Controller.*;
-import Repository.IRepository;
-import Repository.Repository;
+import Repository.*;
 
 public class Program {
+    private final String id;
     private final IStatement statement;
-    private final String key;
     private final String description;
     private Controller controller;
 
-    private static final String LOG_FILE_PATTERN = "log%d.txt";
-    public static int fileIndex = 1;
+    public Program(String id, IStatement statement, String description) {
+        this.id = id;
+        this.statement = statement;
+        this.description = description;
 
-    Program(String newKey, IStatement newStatement, String newDescription) {
-        this.statement = newStatement;
-        this.description = newDescription;
-        this.key = newKey;
-    }
-
-    public Controller getController() {
-        if (controller == null) {
-            controller = createController();
-        }
-        return controller;
-    }
-
-    private Controller createController() {
         ProgramState programState = createProgramState();
-        String logFile = String.format(LOG_FILE_PATTERN, fileIndex++);
-        IRepository repository = new Repository(programState, logFile);
-        return new Controller(repository);
+        IRepository repository = new Repository(programState, "log" + id + ".txt");
+        this.controller = new Controller(repository);
     }
 
     private ProgramState createProgramState() {
-        return new ProgramState(
-                new ExecutionStack(),
-                new SymbolTable(),
-                new Output(),
-                new FileTable(),
-                new HeapTable(),
-                statement
-        );
+        IExecutionStack executionStack = new ExecutionStack();
+        ISymbolTable symbolTable = new SymbolTable();
+        IOutput output = new Output();
+        IFileTable fileTable = new FileTable();
+        IHeapTable heapTable = new HeapTable();
+
+        return new ProgramState(executionStack, symbolTable, output, fileTable, heapTable, statement);
     }
 
-    String getDescription() {
-        return this.description;
+    public ProgramState getCurrentProgramState() {
+        return controller.getRepository().getProgramsList().get(0);
     }
 
-    IStatement getStatement() {
-        return this.statement;
+    public Controller getController() {
+        return controller;
+    }
+
+    public void oneStep() throws Exception {
+        controller.oneStepForAllPrograms(controller.getRepository().getProgramsList());
     }
 
     @Override
     public String toString() {
-        return String.format("%s: %s", key, description);
+        return description;
     }
 }
