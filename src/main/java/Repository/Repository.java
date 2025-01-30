@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Model.Exception.GenericException;
+import Model.Exception.RepositoryException;
 import Model.State.ProgramState;
 
 public class Repository implements IRepository {
@@ -41,7 +42,7 @@ public class Repository implements IRepository {
             ProgramState currentState = programState;        
             logFile.println(currentState);
         } catch (IOException e) {
-            throw new GenericException("Error logging program state: " + e.getMessage());
+            throw new RepositoryException("Error logging program state: " + e.getMessage());
         }
     }
 

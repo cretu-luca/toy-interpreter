@@ -1,5 +1,6 @@
 package Model.Expression;
 
+import Model.Exception.ArithmeticExpressionException;
 import Model.Value.*;
 import Utils.Dictionary.IMyDictionary;
 import Model.Exception.GenericException;
@@ -33,13 +34,13 @@ public class ArithmeticExpression implements IExpression {
                     case "*": return new IntValue(firstInteger * secondInteger);
                     case "/": 
                         if(secondInteger == 0) 
-                            throw new GenericException("Division by zero!");
+                            throw new ArithmeticExpressionException("Division by zero!");
                         return new IntValue(firstInteger / secondInteger);
                     default: 
-                        throw new GenericException("Invalid operator!");
+                        throw new ArithmeticExpressionException("Invalid operator!");
                 }
-            } else throw new GenericException("Second operand is not an integer");
-        } else throw new GenericException("First operand is not an integer");
+            } else throw new ArithmeticExpressionException("Second operand is not an integer");
+        } else throw new ArithmeticExpressionException("First operand is not an integer");
     }
     
     @Override
@@ -55,7 +56,7 @@ public class ArithmeticExpression implements IExpression {
         if(firstType.equals(new IntType())) {
             if(secondType.equals(new IntType())) {
                 return new IntType();
-            } else throw new GenericException("Second operand is not an integer.");
-        } else throw new GenericException("First operand is not an integer.");
+            } else throw new ArithmeticExpressionException("Second operand is not an integer.");
+        } else throw new ArithmeticExpressionException("First operand is not an integer.");
     }
 }

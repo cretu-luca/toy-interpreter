@@ -30,10 +30,10 @@ public class LogicExpression implements IExpression {
                 switch(operator) {
                     case "&": return new BooleanValue(firstBoolean & secondBoolean);
                     case "|": return new BooleanValue(firstBoolean | secondBoolean);
-                    default: throw new GenericException("Invalid operator.");
+                    default: throw new LogicExpressionException("Invalid operator.");
                 }
-            } else throw new GenericException("Second operand is not boolean value.");
-        } else throw new GenericException("First operand is not boolean value.");
+            } else throw new LogicExpressionException("Second operand is not boolean value.");
+        } else throw new LogicExpressionException("First operand is not boolean value.");
     }
 
     @Override
@@ -44,7 +44,7 @@ public class LogicExpression implements IExpression {
         if(firstType.equals(new BooleanType())) {
             if(secondType.equals(new BooleanType())) {
                 return new BooleanType();
-            } else throw new GenericException("Second operand is not a boolean value.");
-        } else throw new GenericException("First operand is not an a boolean value.");
+            } else throw new LogicExpressionException("Second operand is not a boolean value.");
+        } else throw new LogicExpressionException("First operand is not an a boolean value.");
     }
 }

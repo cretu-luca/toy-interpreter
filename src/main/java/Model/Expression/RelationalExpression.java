@@ -1,6 +1,7 @@
 package Model.Expression;
 
 import Model.Exception.GenericException;
+import Model.Exception.RelationalExpressionException;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.Type.BooleanType;
@@ -38,10 +39,10 @@ public class RelationalExpression implements IExpression {
                     case ">=": return new BooleanValue(firstInteger >= secondInteger);
                     case "==": return new BooleanValue(firstInteger == secondInteger);
                     case "!=": return new BooleanValue(firstInteger != secondInteger);
-                    default: throw new GenericException("RelationalExpression: Invalid operator.");
+                    default: throw new RelationalExpressionException("RelationalExpression: Invalid operator.");
                 }
-            } else throw new GenericException("Second operand is not integer.");
-        } else throw new GenericException("First operand is not integer.");
+            } else throw new RelationalExpressionException("Second operand is not integer.");
+        } else throw new RelationalExpressionException("First operand is not integer.");
     }
 
     @Override
@@ -57,7 +58,7 @@ public class RelationalExpression implements IExpression {
         if (type1.equals(new IntType()) && type2.equals(new IntType())) {
             return new BooleanType();
         } else {
-            throw new GenericException("RelationalExpression: operands must be integers");
+            throw new RelationalExpressionException("RelationalExpression: operands must be integers");
         }
     }
 }

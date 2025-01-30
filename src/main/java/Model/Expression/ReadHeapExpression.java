@@ -1,6 +1,7 @@
 package Model.Expression;
 
 import Model.Exception.GenericException;
+import Model.Exception.ReadHeapException;
 import Model.State.*;
 import Model.Type.*;
 import Model.Value.*;
@@ -17,14 +18,14 @@ public class ReadHeapExpression implements IExpression {
     public IValue evaluate(ISymbolTable symbolTable, IHeapTable heapTable) {
         IValue expressionValue = this.expression.evaluate(symbolTable, heapTable);
         if(!(expressionValue instanceof ReferenceValue)) {
-            throw new GenericException("ReadHeapExpression error: " + this.expression + " is not a reference value.");
+            throw new ReadHeapException("ReadHeapExpression error: " + this.expression + " is not a reference value.");
         }
 
         ReferenceValue expressionReferenceValue = (ReferenceValue) expressionValue;
         Integer address = expressionReferenceValue.getAddress();
         
         if(!heapTable.isAddressDefined(address)) {
-            throw new GenericException("ReadHeapExpression error: " + this.expression + " was not allocated on the heap.");
+            throw new ReadHeapException("ReadHeapExpression error: " + this.expression + " was not allocated on the heap.");
         }
 
         return heapTable.get(address);
@@ -41,6 +42,6 @@ public class ReadHeapExpression implements IExpression {
         if (type instanceof ReferenceType) {
             ReferenceType referenceType =(ReferenceType) type;
             return referenceType.getType(); 
-        } else throw new GenericException("the readHeap argument is not a reference value");
+        } else throw new ReadHeapException("the readHeap argument is not a reference value");
     }
 }

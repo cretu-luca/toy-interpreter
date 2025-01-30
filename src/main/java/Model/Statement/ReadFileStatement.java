@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 import Model.Exception.GenericException;
+import Model.Exception.ReadFileStatementException;
 import Model.Expression.*;
 import Model.Type.IType;
 import Model.Type.IntType;
@@ -27,18 +28,18 @@ public class ReadFileStatement implements IStatement {
         IHeapTable heapTable = state.getHeapTable();
 
         if(!symbolTable.isDefined(variableName)) {
-            throw new GenericException("ReadFileStatement error: variable " + this.variableName + " was not declared.");
+            throw new ReadFileStatementException("ReadFileStatement error: variable " + this.variableName + " was not declared.");
         }
 
         IType variableNameType;
         try {
             variableNameType = symbolTable.get(variableName).getType();
         } catch (GenericException e) {
-            throw new GenericException("ReadFileStatement error: " + e.getMessage());
+            throw new ReadFileStatementException("ReadFileStatement error: " + e.getMessage());
         }
 
         if(!variableNameType.equals(new IntType())) {
-            throw new GenericException("ReadFileStatement error: variable" + this.variableName + " is not integer.");
+            throw new ReadFileStatementException("ReadFileStatement error: variable" + this.variableName + " is not integer.");
         }
 
         IFileTable fileTable = state.getFileTable();
@@ -48,14 +49,14 @@ public class ReadFileStatement implements IStatement {
         try {
             fileNameStringValue = (StringValue) fileNameValue;
         } catch (ClassCastException e) {
-            throw new GenericException("ReadFileStatement error: file name is not a string.");
+            throw new ReadFileStatementException("ReadFileStatement error: file name is not a string.");
         }
 
         BufferedReader fileBufferedReader;
         try {
             fileBufferedReader = fileTable.getFileReader(fileNameStringValue);
         } catch (GenericException e) {
-            throw new GenericException("ReadFileStatement error: cannot read file: " + e.getMessage());
+            throw new ReadFileStatementException("ReadFileStatement error: cannot read file: " + e.getMessage());
         }
 
         try {
@@ -70,9 +71,9 @@ public class ReadFileStatement implements IStatement {
             
             symbolTable.update(variableName, new IntValue(value));
         } catch (IOException e) {
-            throw new GenericException("ReadFileStatement error: error reading from file.");
+            throw new ReadFileStatementException("ReadFileStatement error: error reading from file.");
         } catch (NumberFormatException e) {
-            throw new GenericException("ReadFileStatement error: invalid number format in file.");
+            throw new ReadFileStatementException("ReadFileStatement error: invalid number format in file.");
         }
     
         return null;
@@ -89,10 +90,10 @@ public class ReadFileStatement implements IStatement {
         IType variableType = typeEnv.get(variableName);
         
         if (!expressionType.equals(new StringType())) {
-            throw new GenericException("ReadFileStatement error: filename must be a string");
+            throw new ReadFileStatementException("ReadFileStatement error: filename must be a string");
         }
         if (!variableType.equals(new IntType())) {
-            throw new GenericException("ReadFileStatement error: variable must be integer");
+            throw new ReadFileStatementException("ReadFileStatement error: variable must be integer");
         }
         
         return typeEnv;

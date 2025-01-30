@@ -1,6 +1,7 @@
 package Model.State;
 
 import Model.Exception.GenericException;
+import Model.Exception.ProgramStateException;
 import Model.Statement.*;
 
 public class ProgramState {
@@ -36,7 +37,7 @@ public class ProgramState {
 
     public ProgramState oneStep() {
         if(executionStack.isEmpty())
-            throw new GenericException("ProgramState error: executionStack is empty");
+            throw new ProgramStateException("ProgramState error: executionStack is empty");
 
         System.out.println(this);
 

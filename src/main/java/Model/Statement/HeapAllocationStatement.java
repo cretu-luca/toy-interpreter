@@ -1,6 +1,7 @@
 package Model.Statement;
 
 import Model.Exception.GenericException;
+import Model.Exception.HeapAllocationException;
 import Model.Expression.*;
 import Model.State.*;
 import Model.Value.*;
@@ -22,17 +23,17 @@ public class HeapAllocationStatement implements IStatement {
         IHeapTable heapTable = state.getHeapTable();
 
         if(!symbolTable.isDefined(variableName)) {
-            throw new GenericException("HeapAllocationStatement error: " + this.variableName + " is not defined.");
+            throw new HeapAllocationException("HeapAllocationStatement error: " + this.variableName + " is not defined.");
         }
 
         if(!(symbolTable.get(variableName).getType() instanceof ReferenceType)) {
-            throw new GenericException("HeapAllocationStatement error: " + this.variableName + " is not a reference variable.");
+            throw new HeapAllocationException("HeapAllocationStatement error: " + this.variableName + " is not a reference variable.");
         }
 
         IValue value = expression.evaluate(symbolTable, heapTable);
         IType referenceValueType = ((ReferenceValue) symbolTable.get(variableName)).getReferencedType();
         if(!(value.getType().equals(referenceValueType))) {
-            throw new GenericException("HeapAllocationStatement error: " + variableName + " and " + value + " do not have the same reference type.");
+            throw new HeapAllocationException("HeapAllocationStatement error: " + variableName + " and " + value + " do not have the same reference type.");
         }
 
         Integer newPosition = state.getHeapTable().allocate(value);
@@ -55,6 +56,6 @@ public class HeapAllocationStatement implements IStatement {
         if (variableType.equals(new ReferenceType(expressionType))) {
             return typeEnv;
         } else 
-            throw new GenericException("HeapAllocationStatement error: right hand side and left hand side have different types.");
+            throw new HeapAllocationException("HeapAllocationStatement error: right hand side and left hand side have different types.");
     }
 }

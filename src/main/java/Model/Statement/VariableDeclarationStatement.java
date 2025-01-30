@@ -19,7 +19,7 @@ public class VariableDeclarationStatement implements IStatement {
         ISymbolTable symbolTable = state.getSymbolTable();
 
         if(symbolTable.isDefined(variableName)) {
-            throw new GenericException("VariableDeclarationStatement error: variable " + variableName + " already exists.");
+            throw new VariableDeclarationStatementException("VariableDeclarationStatement error: variable " + variableName + " already exists.");
         } else {
             symbolTable.add(variableName, variableType.defaultValue());
         }

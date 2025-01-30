@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import Model.Exception.FileTableException;
 import Model.Exception.GenericException;
 import Model.Value.StringValue;
 import Utils.Dictionary.IMyDictionary;
@@ -29,7 +30,7 @@ public class FileTable implements IFileTable {
             addOpenedFile(fileName, reader);
             return reader;
         } catch (FileNotFoundException e) {
-            throw new GenericException("File " + fileName + " does not exist.");
+            throw new FileTableException("File " + fileName + " does not exist.");
         }
     }
 
@@ -48,7 +49,7 @@ public class FileTable implements IFileTable {
         String fileNameStr = fileName.getValue();
         
         if (!fileDictionary.isDefined(fileNameStr)) {
-            throw new GenericException("File " + fileName + " is not open.");
+            throw new FileTableException("File " + fileName + " is not open.");
         }
 
         BufferedReader reader = fileDictionary.get(fileNameStr);
@@ -56,7 +57,7 @@ public class FileTable implements IFileTable {
             reader.close();
             fileDictionary.remove(fileNameStr);
         } catch (IOException e) {
-            throw new GenericException("Error closing file: " + fileName);
+            throw new FileTableException("Error closing file: " + fileName);
         }
     }
 

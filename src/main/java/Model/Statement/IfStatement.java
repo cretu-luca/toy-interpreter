@@ -27,7 +27,7 @@ public class IfStatement implements IStatement {
 
         IValue conditionValue = condition.evaluate(symbolTable, heapTable);
         if(!(conditionValue instanceof BooleanValue)) {
-            throw new GenericException("IfStatement execute: conditional expression is not a boolean: " + conditionValue.toString());
+            throw new IfStatementException("IfStatement execute: conditional expression is not a boolean: " + conditionValue.toString());
         }
 
         BooleanValue boolCondition = (BooleanValue) conditionValue;
@@ -53,6 +53,6 @@ public class IfStatement implements IStatement {
             thenBranch.typeCheck(typeEnv);
             elseBranch.typeCheck(typeEnv);
             return typeEnv;
-        } else throw new GenericException("The condition of IF has not the type bool");
+        } else throw new IfStatementException("The condition of IF has not the type bool");
     }
 }

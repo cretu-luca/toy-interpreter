@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import Model.Exception.GenericException;
+import Model.Exception.MyDictionaryException;
 
 public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     private HashMap<K,V> dictionary;
@@ -23,7 +24,7 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     @Override
     public void update(K key, V value) {
         if (!isDefined(key)) {
-            throw new GenericException("AssignmentStatement Update: key not found in dictionary: " + key);
+            throw new MyDictionaryException("AssignmentStatement Update: key not found in dictionary: " + key);
         }
         this.dictionary.put(key, value);
     }
@@ -64,7 +65,7 @@ public class MyDictionary<K, V> implements IMyDictionary<K, V> {
     @Override
     public void remove(K key) {
         if (!isDefined(key)) {
-            throw new GenericException("Remove: key not found in dictionary: " + key);
+            throw new MyDictionaryException("Remove: key not found in dictionary: " + key);
         }
         this.dictionary.remove(key);
     }

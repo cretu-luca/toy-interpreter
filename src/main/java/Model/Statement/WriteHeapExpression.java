@@ -1,6 +1,7 @@
 package Model.Statement;
 
 import Model.Exception.GenericException;
+import Model.Exception.WriteHeapExpressionException;
 import Model.State.IHeapTable;
 import Model.State.ISymbolTable;
 import Model.State.ProgramState;
@@ -26,24 +27,24 @@ public class WriteHeapExpression implements IStatement {
         IHeapTable heapTable = state.getHeapTable();
         
         if(!symbolTable.isDefined(variableName)) {
-            throw new GenericException("WriteHeapExpression error: " + this.variableName + " has not been defined.");
+            throw new WriteHeapExpressionException("WriteHeapExpression error: " + this.variableName + " has not been defined.");
         }
 
         IValue variableValue = symbolTable.get(variableName);
         if(!(variableValue instanceof ReferenceValue)) { 
-            throw new GenericException("WriteHeapExpression error: " + this.variableName + " is not a reference value.");
+            throw new WriteHeapExpressionException("WriteHeapExpression error: " + this.variableName + " is not a reference value.");
         }
 
         ReferenceValue referenceVariableValue = (ReferenceValue) variableValue;
         Integer address = referenceVariableValue.getAddress();
 
         if(!(heapTable.isAddressDefined(address))) {
-            throw new GenericException("WriteHeapExpression error: " + this.variableName + " has not been allocated on the heap.");
+            throw new WriteHeapExpressionException("WriteHeapExpression error: " + this.variableName + " has not been allocated on the heap.");
         }
 
         IValue expressionValue = this.expression.evaluate(symbolTable, heapTable);
         if(!(expressionValue.getType().equals(((ReferenceValue) variableValue).getReferencedType()))) {
-            throw new GenericException("WriteHeapExpression error: type mismatch");
+            throw new WriteHeapExpressionException("WriteHeapExpression error: type mismatch");
         }
 
         heapTable.update(address, expressionValue);
@@ -61,7 +62,7 @@ public class WriteHeapExpression implements IStatement {
         IType variableType = typeEnv.get(variableName);
     
         if (!(variableType instanceof ReferenceType)) {
-            throw new GenericException("WriteHeapExpression error: " + variableName + " is not of reference type");
+            throw new WriteHeapExpressionException("WriteHeapExpression error: " + variableName + " is not of reference type");
         }
         
         ReferenceType refType = (ReferenceType) variableType;
@@ -72,7 +73,7 @@ public class WriteHeapExpression implements IStatement {
         if (expressionType.equals(referencedType)) {
             return typeEnv;
         } else {
-            throw new GenericException("WriteHeapExpression error: type mismatch between " + referencedType + " and " + expressionType);
+            throw new WriteHeapExpressionException("WriteHeapExpression error: type mismatch between " + referencedType + " and " + expressionType);
         }
     }
 }

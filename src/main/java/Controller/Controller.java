@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.Exception.ControllerException;
 import Repository.IRepository;
 import Utils.Dictionary.IMyDictionary;
 import Utils.Dictionary.MyDictionary;
@@ -28,8 +29,8 @@ public class Controller {
             this.executor = Executors.newFixedThreadPool(2);
             this.garbageCollector = new GarbageCollector();
             
-        } catch (GenericException e) {
-            throw new GenericException("Type checking failed: " + e.getMessage());
+        } catch (ControllerException e) {
+            throw new ControllerException("Type checking failed: " + e.getMessage());
         }
     }
 
@@ -70,7 +71,7 @@ public class Controller {
     }
 
     public void allSteps() throws InterruptedException {
-        executor = Executors.newFixedThreadPool(2);
+        executor = Executors.newFixedThreadPool(5);
         List<ProgramState> programsList = removeCompletedPrograms(repository.getProgramsList());
     
         while(programsList.size() > 0) {

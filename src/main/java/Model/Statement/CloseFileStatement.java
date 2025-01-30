@@ -1,5 +1,6 @@
 package Model.Statement;
 
+import Model.Exception.CloseFileException;
 import Model.Exception.GenericException;
 import Model.Expression.IExpression;
 import Model.State.IFileTable;
@@ -28,25 +29,25 @@ public class CloseFileStatement implements IStatement {
         try {
             fileNameValue = this.fileName.evaluate(symbolTable, heapTable);
         } catch (GenericException e) {
-            throw new GenericException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
+            throw new CloseFileException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
         }
 
         StringValue fileNameStringValue;
         try {
             fileNameStringValue = (StringValue) fileNameValue;
         } catch (GenericException e) {
-            throw new GenericException("OpenFileStatement error: expression " + this.fileName + " does not evalute to a string.");
+            throw new CloseFileException("OpenFileStatement error: expression " + this.fileName + " does not evalute to a string.");
         }
 
         IFileTable fileTable = state.getFileTable();
         if(!fileTable.isFileAlreadyOpen(fileNameStringValue)) {
-            throw new GenericException("CloseFileStatement error: file " + fileNameStringValue + " is not open.");
+            throw new CloseFileException("CloseFileStatement error: file " + fileNameStringValue + " is not open.");
         }
 
         try {
             fileTable.closeFile(fileNameStringValue);
         } catch (GenericException e) {
-            throw new GenericException("CloseFileStatement error: " + e.getMessage());
+            throw new CloseFileException("CloseFileStatement error: " + e.getMessage());
         }
 
         return null;
@@ -62,6 +63,6 @@ public class CloseFileStatement implements IStatement {
         IType expressionType = fileName.typeCheck(typeEnv);
         if (expressionType.equals(new StringType())) {
             return typeEnv;
-        } else throw new GenericException("CloseFileStatement error: filename must be a string.");
+        } else throw new CloseFileException("CloseFileStatement error: filename must be a string.");
     }
 }

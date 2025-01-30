@@ -29,8 +29,8 @@ public class AssignmentStatement implements IStatement {
 
             if(value.getType().equals(type)) {
                 symbolTable.update(variableName, value);
-            } else throw new GenericException("AssignmentStatement execute: declared type of variable " + this.variableName + " and the type of the assigned expression do not match.");
-        } else throw new GenericException("AssignmentStatement execute: the used variable was not delcared before.");
+            } else throw new AssignmentStatementException("AssignmentStatement execute: declared type of variable " + this.variableName + " and the type of the assigned expression do not match.");
+        } else throw new AssignmentStatementException("AssignmentStatement execute: the used variable was not delcared before.");
         
         return null;
     }
@@ -48,6 +48,6 @@ public class AssignmentStatement implements IStatement {
         if (variableType.equals(expressionType))
             return typeEnv;
         else
-            throw new GenericException("AssignmentStatement: right hand side and left hand side have different types ");
+            throw new AssignmentStatementException("AssignmentStatement: right hand side and left hand side have different types ");
     }
 }

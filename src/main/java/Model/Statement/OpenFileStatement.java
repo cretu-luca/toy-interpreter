@@ -27,14 +27,14 @@ public class OpenFileStatement implements IStatement {
         try {
             fileNameValue = this.fileName.evaluate(symbolTable, heapTable);
         } catch (GenericException e) {
-            throw new GenericException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
+            throw new OpenFileStatementException("OpenFileStatement error: Error evaluating expression: " + e.getMessage());
         }
 
         StringValue fileNameStringValue;
         try {
             fileNameStringValue = (StringValue) fileNameValue;
         } catch (GenericException e) {
-            throw new GenericException("OpenFileStatement error: expression " + this.fileName + " does not evalute to a string.");
+            throw new OpenFileStatementException("OpenFileStatement error: expression " + this.fileName + " does not evalute to a string.");
         }
 
         IFileTable fileTable = state.getFileTable();
@@ -54,6 +54,6 @@ public class OpenFileStatement implements IStatement {
         IType expressionType = fileName.typeCheck(typeEnv);
         if (expressionType.equals(new StringType())) {
             return typeEnv;
-        } else throw new GenericException("OpenFileStatement error: filename must be a string");
+        } else throw new OpenFileStatementException("OpenFileStatement error: filename must be a string");
     }
 }

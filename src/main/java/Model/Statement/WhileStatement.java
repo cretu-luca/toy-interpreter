@@ -1,6 +1,7 @@
 package Model.Statement;
 
 import Model.Exception.GenericException;
+import Model.Exception.WhileStatementException;
 import Model.Expression.IExpression;
 import Model.State.IExecutionStack;
 import Model.State.IHeapTable;
@@ -29,7 +30,7 @@ public class WhileStatement implements IStatement {
 
         IValue expressionValue = this.expression.evaluate(symbolTable, heapTable);
         if(!(expressionValue instanceof BooleanValue)) {
-            throw new GenericException("WhileStatement error: " + this.expression + " does not evalute to a boolean value.");
+            throw new WhileStatementException("WhileStatement error: " + this.expression + " does not evalute to a boolean value.");
         }
 
         BooleanValue expressionBooleanValue = (BooleanValue) expressionValue;
@@ -53,7 +54,7 @@ public class WhileStatement implements IStatement {
             statement.typeCheck(typeEnv);
             return typeEnv;
         } else {
-            throw new GenericException("WhileStatement: condition must be boolean");
+            throw new WhileStatementException("WhileStatement: condition must be boolean");
         }
     }
 }
