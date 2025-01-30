@@ -21,10 +21,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ExecutionWindowController {
-    // things to add
-    // clear out all outputs after execution ends
-    // more exceptions
-
     @FXML
     public Text programStateCounter;
     @FXML
