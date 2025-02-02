@@ -8,61 +8,61 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.ExecutionWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="862.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.ExecutionWindowController">
    <children>
-      <Button layoutX="21.0" layoutY="648.0" mnemonicParsing="false" onAction="#switchToStartWindow" prefHeight="37.0" prefWidth="112.0" text="Back" />
-      <Button layoutX="221.0" layoutY="573.0" mnemonicParsing="false" onAction="#stepButtonAction" prefHeight="82.0" prefWidth="159.0" text="Step">
+      <Button layoutX="25.0" layoutY="774.0" mnemonicParsing="false" onAction="#switchToStartWindow" prefHeight="37.0" prefWidth="112.0" text="Back" />
+      <Button layoutX="527.0" layoutY="752.0" mnemonicParsing="false" onAction="#stepButtonAction" prefHeight="82.0" prefWidth="159.0" text="Step">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <Text fx:id="programStateCounter" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState's:" wrappingWidth="280.16259765625">
+      <Text fx:id="programStateCounter" layoutX="48.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState's:" wrappingWidth="280.16259765625">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <TableView fx:id="heapTableListView" layoutX="325.0" layoutY="250.0" prefHeight="120.0" prefWidth="260.0">
+      <TableView fx:id="heapTableListView" layoutX="238.0" layoutY="82.0" prefHeight="167.0" prefWidth="394.0">
          <columns>
-            <TableColumn fx:id="addressColumn" prefWidth="105.4635009765625" text="Address" />
-            <TableColumn fx:id="heapValueColumn" prefWidth="153.53652954101562" text="Value" />
+            <TableColumn fx:id="addressColumn" prefWidth="191.0" text="Address" />
+            <TableColumn fx:id="heapValueColumn" prefWidth="202.0" text="Value" />
          </columns>
       </TableView>
-      <ListView fx:id="outputListView" layoutX="324.0" layoutY="420.0" prefHeight="120.0" prefWidth="260.0" />
-      <ListView fx:id="fileTableListView" layoutX="25.0" layoutY="420.0" prefHeight="120.0" prefWidth="260.0" />
-      <Text layoutX="325.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HeapTable" wrappingWidth="88.00439453125">
+      <ListView fx:id="outputListView" layoutX="650.0" layoutY="288.0" prefHeight="178.0" prefWidth="451.0" />
+      <ListView fx:id="fileTableListView" layoutX="26.0" layoutY="516.0" prefHeight="198.0" prefWidth="607.0" />
+      <Text layoutX="253.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HeapTable" wrappingWidth="88.00439453125">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text layoutX="328.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" wrappingWidth="120.8046875">
+      <Text layoutX="650.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output" wrappingWidth="120.8046875">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text layoutX="25.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FileTable" wrappingWidth="88.00439453125">
+      <Text layoutX="37.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FileTable" wrappingWidth="88.00439453125">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text layoutX="25.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState" wrappingWidth="199.0">
+      <Text layoutX="38.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProgramState" wrappingWidth="199.0">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <ListView fx:id="programStateListView" layoutX="25.0" layoutY="90.0" prefHeight="120.0" prefWidth="260.0" />
-      <TableView fx:id="symbolTableListView" layoutX="25.0" layoutY="250.0" prefHeight="120.0" prefWidth="260.0">
+      <ListView fx:id="programStateListView" layoutX="25.0" layoutY="80.0" prefHeight="167.0" prefWidth="191.0" />
+      <TableView fx:id="symbolTableListView" layoutX="25.0" layoutY="288.0" prefHeight="178.0" prefWidth="607.0">
          <columns>
-            <TableColumn fx:id="variableNameColumn" prefWidth="97.74258804321289" text="Name" />
-            <TableColumn fx:id="variableValueColumn" prefWidth="160.9999542236328" text="Value" />
+            <TableColumn fx:id="variableNameColumn" prefWidth="312.0" text="Name" />
+            <TableColumn fx:id="variableValueColumn" prefWidth="310.0" text="Value" />
          </columns>
       </TableView>
-      <Text layoutX="25.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SymbolTable" wrappingWidth="111.54838590186466">
+      <Text layoutX="37.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SymbolTable" wrappingWidth="111.54838590186466">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <ListView fx:id="executionStackListView" layoutX="325.0" layoutY="90.0" prefHeight="120.0" prefWidth="260.0" />
-      <Text layoutX="325.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExecutionStack" wrappingWidth="111.54838590186466">
+      <ListView fx:id="executionStackListView" layoutX="650.0" layoutY="82.0" prefHeight="167.0" prefWidth="451.0" />
+      <Text layoutX="659.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExecutionStack" wrappingWidth="111.54838590186466">
          <font>
             <Font size="16.0" />
          </font>

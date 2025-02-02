@@ -35,9 +35,7 @@ public class HeapTable implements IHeapTable {
     }
 
     @Override
-    public IValue get(Integer address) throws GenericException {
-        return this.dictionary.get(address);
-    }
+    public IValue get(Integer address) throws GenericException { return this.dictionary.get(address); }
 
     @Override
     public void deallocate(Integer address) {
@@ -53,7 +51,6 @@ public class HeapTable implements IHeapTable {
     public IMyDictionary<Integer, IValue> getContent() {
         return this.dictionary;
     }
-
 
     @Override
     public Set<Integer> getAddresses() {

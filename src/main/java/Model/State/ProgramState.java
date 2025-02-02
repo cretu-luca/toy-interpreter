@@ -1,6 +1,5 @@
 package Model.State;
 
-import Model.Exception.GenericException;
 import Model.Exception.ProgramStateException;
 import Model.Statement.*;
 
@@ -53,13 +52,9 @@ public class ProgramState {
         return this.executionStack.isEmpty();
     }
 
-    public IExecutionStack getExecutionStack() {
-        return this.executionStack;
-    }
+    public IExecutionStack getExecutionStack() { return this.executionStack; }
 
-    public ISymbolTable getSymbolTable() {
-        return this.symbolTable;
-    }
+    public ISymbolTable getSymbolTable() { return this.symbolTable; }
 
     public IOutput getOutput() {
         return this.output;

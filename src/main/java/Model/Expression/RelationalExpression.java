@@ -33,7 +33,7 @@ public class RelationalExpression implements IExpression {
                 Integer secondInteger = ((IntValue) secondValue).getValue();
 
                 switch(operator) {
-                    case "<": return new BooleanValue(firstInteger <secondInteger);
+                    case "<": return new BooleanValue(firstInteger < secondInteger);
                     case "<=": return new BooleanValue(firstInteger <= secondInteger);
                     case ">": return new BooleanValue(firstInteger > secondInteger);
                     case ">=": return new BooleanValue(firstInteger >= secondInteger);

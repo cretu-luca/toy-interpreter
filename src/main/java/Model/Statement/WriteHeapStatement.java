@@ -12,11 +12,11 @@ import Model.Value.ReferenceValue;
 import Utils.Dictionary.IMyDictionary;
 import Model.Expression.*;
 
-public class WriteHeapExpression implements IStatement {
+public class WriteHeapStatement implements IStatement {
     private final String variableName;
     private final IExpression expression;
     
-    public WriteHeapExpression(String newVariableName, IExpression newExpression) {
+    public WriteHeapStatement(String newVariableName, IExpression newExpression) {
         this.variableName = newVariableName;
         this.expression = newExpression;
     }

@@ -15,4 +15,9 @@ public class NopStatement implements IStatement {
     public IMyDictionary<String, IType> typeCheck(IMyDictionary<String, IType> typeEnv) throws GenericException {
         return typeEnv;
     }
+
+    @Override
+    public String toString() {
+        return "()";
+    }
 }

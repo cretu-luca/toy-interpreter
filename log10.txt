@@ -1,8 +1,8 @@
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+( boolean b; ( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c)))))
 
 
 ===== Symbol Table ====
@@ -19,11 +19,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))))
 
 
 ===== Symbol Table ====
@@ -40,11 +40,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))))
 
 
 ===== Symbol Table ====
@@ -61,14 +61,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -82,14 +82,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -103,15 +103,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -125,15 +125,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -147,15 +147,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -169,15 +169,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -191,16 +191,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -214,16 +214,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -237,15 +237,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -259,15 +259,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@73c31bb1; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -281,16 +281,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@73c31bb1
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -304,16 +304,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@73c31bb1
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -327,16 +327,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -350,16 +350,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -373,15 +373,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -395,15 +395,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -417,14 +417,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -434,745 +434,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
 
 
 ===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-v = 2
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-v = 2
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> false
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
+b --> true
+c --> 0
 
-=== Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
 
-
 ====== File Table =====
 Empty symbol table
 
@@ -1180,43 +456,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
------------------------------------
-
+0
 
----------- Program State <2>----------
-
-=== Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1226,42 +478,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-v = 2
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 0
+0
 
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1271,40 +500,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-print(v)
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
+0
 
-======== Output =======
-Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1314,19 +522,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1336,19 +544,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1358,19 +566,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1380,19 +588,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1402,15 +610,15 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+( boolean b; ( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c)))))
 
 
 ===== Symbol Table ====
@@ -1427,11 +635,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))))
 
 
 ===== Symbol Table ====
@@ -1448,11 +656,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))))
 
 
 ===== Symbol Table ====
@@ -1469,14 +677,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -1490,14 +698,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -1511,15 +719,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -1533,15 +741,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -1555,15 +763,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -1577,15 +785,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -1599,16 +807,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -1622,16 +830,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -1645,15 +853,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1667,15 +875,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@e75be4; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1689,16 +897,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@e75be4
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1712,16 +920,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@e75be4
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1735,16 +943,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1758,16 +966,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1781,15 +989,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1803,15 +1011,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1822,105 +1030,17 @@ Empty symbol table
 
 ======== Output =======
 Empty output
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -1930,15 +1050,15 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+0
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+( boolean b; ( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c)))))
 
 
 ===== Symbol Table ====
@@ -1955,11 +1075,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))))
 
 
 ===== Symbol Table ====
@@ -1976,11 +1096,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))))
 
 
 ===== Symbol Table ====
@@ -1997,14 +1117,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -2018,14 +1138,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -2039,15 +1159,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -2061,15 +1181,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -2083,15 +1203,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2105,15 +1225,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2127,16 +1247,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2150,16 +1270,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2173,15 +1293,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2195,15 +1315,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@183ea5f8; print(c))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2217,16 +1337,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@183ea5f8
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2240,16 +1360,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@183ea5f8
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2263,16 +1383,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2286,16 +1406,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b = true) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2309,15 +1429,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2331,16 +1451,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+( boolean b; ( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c)))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -2353,38 +1471,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
 Empty symbol table
 
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
 ====== File Table =====
 Empty symbol table
 
@@ -2392,43 +1488,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
-
+Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
 Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-
 
-===== Symbol Table ====
-a --> true
-v --> 2
-
-
 ====== File Table =====
 Empty symbol table
 
@@ -2436,19 +1509,18 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
-
+Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> false
 
 
 ====== File Table =====
@@ -2458,20 +1530,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
-
+Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))))
 
 
 ===== Symbol Table ====
-Empty symbol table
+b --> false
 
+
 ====== File Table =====
 Empty symbol table
 
@@ -2483,16 +1555,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c)))
 
 
 ===== Symbol Table ====
-Empty symbol table
+b --> false
 
+
 ====== File Table =====
 Empty symbol table
 
@@ -2504,16 +1577,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c)))
 
 
 ===== Symbol Table ====
-Empty symbol table
+b --> false
 
+
 ====== File Table =====
 Empty symbol table
 
@@ -2525,14 +1599,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2546,14 +1621,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c)))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2567,15 +1643,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2589,15 +1666,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -2611,15 +1689,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2633,15 +1711,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( Model.Statement.ConditionalAssignmentStatement@6463f5cd; print(c))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2655,16 +1733,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+Model.Statement.ConditionalAssignmentStatement@6463f5cd
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2678,16 +1756,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+Model.Statement.ConditionalAssignmentStatement@6463f5cd
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2701,15 +1779,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+(if(b) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2723,15 +1802,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+(if(b) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2745,16 +1825,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+c = 100
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2768,16 +1848,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+c = 100
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -2791,16 +1871,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2814,16 +1893,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2837,15 +1915,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2855,19 +1932,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2877,18 +1954,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2898,19 +1976,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2920,19 +1998,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2942,19 +2020,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2964,19 +2042,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -2986,15 +2064,15 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+( boolean b; ( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))))))
 
 
 ===== Symbol Table ====
@@ -3011,11 +2089,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))))
 
 
 ===== Symbol Table ====
@@ -3032,11 +2110,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+boolean b
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))))
 
 
 ===== Symbol Table ====
@@ -3053,14 +2131,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -3074,14 +2152,14 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( int c; ( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -3095,15 +2173,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -3117,15 +2195,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+int c
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))))
 
 
 ===== Symbol Table ====
-a --> false
+b --> false
 
 
 ====== File Table =====
@@ -3139,15 +2217,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -3161,15 +2239,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( b = true; ( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -3183,16 +2261,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -3206,16 +2284,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+b = true
+( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> false
+c --> 0
 
 
 ====== File Table =====
@@ -3229,15 +2307,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3251,15 +2329,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+( Model.Statement.ConditionalAssignmentStatement@7d1a1b5b; ( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3273,16 +2351,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@7d1a1b5b
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3296,16 +2374,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+Model.Statement.ConditionalAssignmentStatement@7d1a1b5b
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3319,16 +2397,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b) then(c = 100) else(c = 200))
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3342,16 +2420,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
+(if(b) then(c = 100) else(c = 200))
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3365,15 +2443,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+c = 100
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3387,15 +2466,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
+c = 100
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 0
 
 
 ====== File Table =====
@@ -3409,37 +2489,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-2
-
------------------------------------
-
-
----------- Program State <2>----------
-
-=== Execution Stack ===
-( boolean a; ( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))))
+b --> true
+c --> 100
 
 
-===== Symbol Table ====
-Empty symbol table
-
 ====== File Table =====
 Empty symbol table
 
@@ -3451,36 +2511,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+( print(c); ( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c)))
 
 
 ===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <2>----------
+b --> true
+c --> 100
 
-=== Execution Stack ===
-boolean a
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
-
-
-===== Symbol Table ====
-Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -3493,14 +2533,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+print(c)
+( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3514,14 +2556,16 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( int v; ( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v))))
+print(c)
+( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3535,15 +2579,15 @@ Empty output
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3553,19 +2597,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-int v
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+( Model.Statement.ConditionalAssignmentStatement@1ea715f1; print(c))
 
 
 ===== Symbol Table ====
-a --> false
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3575,19 +2620,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+Model.Statement.ConditionalAssignmentStatement@1ea715f1
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3597,19 +2644,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( a = true; ( (if(a) then(v = 2) else(v = 3)); print(v)))
+Model.Statement.ConditionalAssignmentStatement@1ea715f1
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3619,20 +2668,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+(if(false) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3642,20 +2692,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-a = true
-( (if(a) then(v = 2) else(v = 3)); print(v))
+(if(false) then(c = 100) else(c = 200))
+print(c)
 
 
 ===== Symbol Table ====
-a --> false
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3665,19 +2716,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+c = 200
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3687,19 +2740,21 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-( (if(a) then(v = 2) else(v = 3)); print(v))
+c = 200
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 100
 
 
 ====== File Table =====
@@ -3709,20 +2764,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3732,20 +2787,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-(if(a) then(v = 2) else(v = 3))
-print(v)
+print(c)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3755,20 +2810,19 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3778,20 +2832,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+200
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-v = 2
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 0
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3801,19 +2855,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+200
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3823,19 +2878,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+200
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
-print(v)
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3845,18 +2901,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-Empty output
+100
+200
+
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3866,19 +2924,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
+200
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3888,19 +2947,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
+200
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3910,19 +2970,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
+200
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3932,19 +2993,20 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
+200
 
 -----------------------------------
 
 
----------- Program State <2>----------
+---------- Program State <3>----------
 
 === Execution Stack ===
 
 
 ===== Symbol Table ====
-a --> true
-v --> 2
+b --> true
+c --> 200
 
 
 ====== File Table =====
@@ -3954,7 +3016,8 @@ Empty symbol table
 Empty symbol table
 
 ======== Output =======
-2
+100
+200
 
 -----------------------------------
 

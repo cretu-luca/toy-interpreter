@@ -5,43 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50426a09-44f8-4bcc-933c-acd585334cd6" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/ArithmeticExpressionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/AssignmentStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/CloseFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/ControllerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/FileTableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/HeapAllocationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/IfStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/LogicExpressionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/MyDictionaryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/OpenFileStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/ProgramStateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/ReadFileStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/ReadHeapException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/RelationalExpressionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/RepositoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/VariableDeclarationStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/WhileStatementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exception/WriteHeapExpressionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/MulExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/NotExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/Tuple/IMyTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/Tuple/MyTuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Expression/ArithmeticExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/ArithmeticExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Expression/LogicExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/LogicExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Expression/ReadHeapExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/ReadHeapExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/State/HeapTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model/State/HeapTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/State/ProgramState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model/State/ProgramState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Statement/NopStatement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model/Statement/NopStatement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Statement/WriteHeapExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/GUI/ExecutionWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/GUI/ExecutionWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/View/ProgramsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/View/ProgramsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ExecutionWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ArithmeticExpression.class.uniqueId11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AssignmentStatement.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CloseFileStatement.class.uniqueId18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/CompoundStatement.class.uniqueId14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Controller.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExecutionStack.class.uniqueId17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ExecutionWindowController.class.uniqueId30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FileTable.class.uniqueId35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ForkStatement.class.uniqueId23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/GUIMenu.class.uniqueId21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/GarbageCollector.class.uniqueId31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HeapAllocationStatement.class.uniqueId16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HeapTable.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/IExecutionStack.class.uniqueId27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/IRepository.class.uniqueId13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/IStatement.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/IfStatement.class.uniqueId25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LogicExpression.class.uniqueId26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MyDictionary.class.uniqueId10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NopStatement.class.uniqueId15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/OpenFileStatement.class.uniqueId19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/PrintStatement.class.uniqueId12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Program.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProgramState.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProgramsManager.class.uniqueId2" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ProgramsManager.class.uniqueId2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReadFileStatement.class.uniqueId9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ReadHeapExpression.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/RelationalExpression.class.uniqueId29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Repository.class.uniqueId33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StartWindowController.class.uniqueId28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SymbolTable.class.uniqueId24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TextMenu.class.uniqueId20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/VariableDeclarationStatement.class.uniqueId22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/WhileStatement.class.uniqueId34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/WriteHeapExpression.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Expression/RelationalExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Expression/RelationalExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/State/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/FileTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/State/HeapTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/HeapTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/State/ProgramState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/State/ProgramState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/AssignmentStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/AssignmentStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/CloseFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/CloseFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/HeapAllocationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/HeapAllocationStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/IfStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/IfStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/OpenFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/OpenFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/ReadFileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/ReadFileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/VariableDeclarationStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/VariableDeclarationStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/WhileStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/WhileStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/WriteHeapExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/WriteHeapExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Dictionary/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Dictionary/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/NopStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/NopStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Statement/WriteHeapExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Statement/WriteHeapStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/GUI/ExecutionWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ProgramsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ProgramsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ExecutionWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +112,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -235,6 +271,9 @@
       <workItem from="1736317015196" duration="569000" />
       <workItem from="1736344560094" duration="380000" />
       <workItem from="1738245307930" duration="3982000" />
+      <workItem from="1738310848266" duration="31148000" />
+      <workItem from="1738400091910" duration="35703000" />
+      <workItem from="1738483538108" duration="13626000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -249,6 +288,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />

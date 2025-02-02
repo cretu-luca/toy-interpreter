@@ -1,8 +1,8 @@
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+Model.Statement.WaitStatement@7cbffa39
 
 
 ===== Symbol Table ====
@@ -19,11 +19,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+Model.Statement.WaitStatement@4fca4582
 
 
 ===== Symbol Table ====
@@ -40,11 +40,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+Model.Statement.WaitStatement@4fca4582
 
 
 ===== Symbol Table ====
@@ -61,470 +61,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+Model.Statement.WaitStatement@4fca4582
 
 
 ===== Symbol Table ====
-file --> 
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
 
 ====== Heap Table =====
 Empty symbol table
@@ -535,20 +82,17 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
+Model.Statement.WaitStatement@4fca4582
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -559,21 +103,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+print(10 - 1)
+Model.Statement.WaitStatement@1dd7345e
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -584,21 +125,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+print(10 - 1)
+Model.Statement.WaitStatement@1dd7345e
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -609,20 +147,1058 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+Model.Statement.WaitStatement@1dd7345e
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
+Empty symbol table
 
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@1dd7345e
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@74e6223a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@74e6223a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@74e6223a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@74e6223a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@64c1ac30
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@64c1ac30
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@64c1ac30
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@64c1ac30
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@2952f2b3
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@2952f2b3
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@2952f2b3
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@2952f2b3
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@d035603
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@d035603
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@d035603
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@d035603
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@48b1426b
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@48b1426b
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@48b1426b
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@48b1426b
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@2178d761
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@2178d761
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@2178d761
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@2178d761
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@1f816e97
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@1f816e97
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@1f816e97
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@1f816e97
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@8a5802a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@8a5802a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@8a5802a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@8a5802a
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@4139ebda
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+Model.Statement.WaitStatement@836b37c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+Model.Statement.WaitStatement@836b37c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@836b37c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -633,20 +1209,17 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+Model.Statement.WaitStatement@836b37c
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -657,21 +1230,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+print(10 - 1)
+Model.Statement.WaitStatement@2d401d56
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -682,21 +1252,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+print(10 - 1)
+Model.Statement.WaitStatement@2d401d56
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -707,65 +1274,14 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-closeFile(file)
+Model.Statement.WaitStatement@2d401d56
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
 Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5ce65a89
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
 
 ====== File Table =====
 Empty symbol table
@@ -775,778 +1291,19 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+Model.Statement.WaitStatement@2d401d56
 
 
 ===== Symbol Table ====
 Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@387e9bd2
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
 
 ====== File Table =====
 Empty symbol table
@@ -1556,20 +1313,20 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@4aa4ba3f
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -1579,20 +1336,20 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@4aa4ba3f
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -1602,15 +1359,904 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+Model.Statement.WaitStatement@4aa4ba3f
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@4aa4ba3f
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@211b5cf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@211b5cf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@211b5cf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@211b5cf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@8079ed8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@8079ed8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@8079ed8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@8079ed8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@25008823
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@25008823
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@25008823
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@25008823
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@4a1abbfe
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@4a1abbfe
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@4a1abbfe
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@4a1abbfe
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@452ac0bf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@452ac0bf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@452ac0bf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@452ac0bf
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@716f779c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@716f779c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@716f779c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@716f779c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@500fa802
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@500fa802
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@500fa802
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@500fa802
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@7018b967
 
 
 ===== Symbol Table ====
@@ -1627,11 +2273,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+Model.Statement.WaitStatement@5097a6be
 
 
 ===== Symbol Table ====
@@ -1648,11 +2294,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+Model.Statement.WaitStatement@5097a6be
 
 
 ===== Symbol Table ====
@@ -1669,470 +2315,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+Model.Statement.WaitStatement@5097a6be
 
 
 ===== Symbol Table ====
-file --> 
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
 
 ====== Heap Table =====
 Empty symbol table
@@ -2143,20 +2336,17 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
+Model.Statement.WaitStatement@5097a6be
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2167,21 +2357,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+print(10 - 1)
+Model.Statement.WaitStatement@5f33e7be
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2192,21 +2379,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+print(10 - 1)
+Model.Statement.WaitStatement@5f33e7be
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2217,20 +2401,1058 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+Model.Statement.WaitStatement@5f33e7be
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
+Empty symbol table
 
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@5f33e7be
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@5f815e5c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+Model.Statement.WaitStatement@5f815e5c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@5f815e5c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@5f815e5c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@77aa3cee
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+Model.Statement.WaitStatement@77aa3cee
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@77aa3cee
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@77aa3cee
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@38033ea
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@38033ea
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@38033ea
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@38033ea
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@43ce2a33
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@43ce2a33
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@43ce2a33
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@43ce2a33
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@16e8efa8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@16e8efa8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@16e8efa8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@16e8efa8
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@3003ecd7
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@3003ecd7
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@3003ecd7
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@3003ecd7
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@321e865e
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@321e865e
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@321e865e
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@321e865e
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@b3bd9c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+Model.Statement.WaitStatement@b3bd9c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@b3bd9c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+Model.Statement.WaitStatement@b3bd9c
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+wait(10 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+wait(10 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2241,20 +3463,17 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+wait(10 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2265,21 +3484,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+print(10 - 1)
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2290,21 +3506,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+print(10 - 1)
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -2315,65 +3528,14 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-closeFile(file)
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
 Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@1f5e5545
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
 
 ====== File Table =====
 Empty symbol table
@@ -2383,20 +3545,19 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -2406,20 +3567,20 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+print(10 - 1 - 1)
+wait(10 - 1 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -2429,778 +3590,20 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+print(10 - 1 - 1)
+wait(10 - 1 - 1 - 1)
 
 
 ===== Symbol Table ====
 Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); closeFile(file))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-closeFile(file)
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@de139fd
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-10
-20
-
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 20
-
 
 ====== File Table =====
 Empty symbol table
@@ -3210,20 +3613,19 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+wait(10 - 1 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -3233,20 +3635,20 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
+8
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+wait(10 - 1 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -3256,15 +3658,917 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
+8
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+print(10 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10)
 
 
 ===== Symbol Table ====
@@ -3281,11 +4585,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+wait(10 - 1)
 
 
 ===== Symbol Table ====
@@ -3302,11 +4606,11 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+print(10)
+wait(10 - 1)
 
 
 ===== Symbol Table ====
@@ -3323,470 +4627,17 @@ Empty output
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
+wait(10 - 1)
 
 
 ===== Symbol Table ====
-file --> 
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@5fa3577e
-
 
 ====== Heap Table =====
 Empty symbol table
@@ -3797,10 +4648,10 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( String file; ( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))))
+wait(10 - 1)
 
 
 ===== Symbol Table ====
@@ -3808,521 +4659,6 @@ Empty symbol table
 
 ====== File Table =====
 Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-String file
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-Empty symbol table
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( file = test.in; ( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-file = test.in
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> 
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( open(file); ( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-open(file)
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-Empty symbol table
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( int v; ( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file))))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-int v
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); ( readFile(file, v); ( print(v); closeFile(file)))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-readFile(file, v)
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 0
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( print(v); ( readFile(file, v); ( print(v); closeFile(file))))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-print(v)
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
-
-====== Heap Table =====
-Empty symbol table
-
-======== Output =======
-Empty output
------------------------------------
-
-
----------- Program State <3>----------
-
-=== Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
-
-
-===== Symbol Table ====
-file --> test.in
-v --> 10
-
-
-====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
 
 ====== Heap Table =====
 Empty symbol table
@@ -4333,20 +4669,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( readFile(file, v); ( print(v); closeFile(file)))
+print(10 - 1)
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4357,21 +4691,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+print(10 - 1)
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4382,21 +4713,437 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-readFile(file, v)
-( print(v); closeFile(file))
+wait(10 - 1 - 1)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 10
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
+Empty symbol table
 
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+wait(10 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1)
+wait(10 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10 - 1 - 1 - 1 - 1 - 1)
+wait(10 - 1 - 1 - 1 - 1 - 1 - 1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(10)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+wait(9)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(10)
+wait(9)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(9)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4407,20 +5154,17 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+wait(9)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4431,20 +5175,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-( print(v); closeFile(file))
+print(9)
+wait(8)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4455,21 +5197,18 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+print(9)
+wait(8)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
@@ -4480,90 +5219,82 @@ Empty symbol table
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-print(v)
-closeFile(file)
+wait(8)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
 
 ======== Output =======
 10
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-closeFile(file)
+wait(8)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
-closeFile(file)
+print(8)
+wait(7)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
-test.in --> java.io.BufferedReader@7ae3ce6
-
+Empty symbol table
 
 ====== Heap Table =====
 Empty symbol table
 
 ======== Output =======
 10
-20
+9
 
 -----------------------------------
 
 
----------- Program State <3>----------
+---------- Program State <5>----------
 
 === Execution Stack ===
+print(8)
+wait(7)
 
 
 ===== Symbol Table ====
-file --> test.in
-v --> 20
-
+Empty symbol table
 
 ====== File Table =====
 Empty symbol table
@@ -4573,7 +5304,954 @@ Empty symbol table
 
 ======== Output =======
 10
-20
+9
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(7)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(7)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(7)
+wait(6)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(7)
+wait(6)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(6)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(6)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(6)
+wait(5)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(6)
+wait(5)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(5)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(5)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(5)
+wait(4)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(5)
+wait(4)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(4)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(4)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(4)
+wait(3)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(4)
+wait(3)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(3)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(3)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(3)
+wait(2)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(3)
+wait(2)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(2)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(2)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(2)
+wait(1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(2)
+wait(1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(1)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(1)
+wait(0)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+print(1)
+wait(0)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(0)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+wait(0)
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <5>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
 
 -----------------------------------
 

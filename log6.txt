@@ -10120,3 +10120,2421 @@ Empty symbol table
 
 -----------------------------------
 
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( int v; ( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v))))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+int v
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+int v
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = 4
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = 4
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( int v; ( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v))))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+int v
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+int v
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+Empty symbol table
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( v = 4; ( while(v > 0) ( print(v); v = v - 1); print(v)))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = 4
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = 4
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( while(v > 0) ( print(v); v = v - 1); print(v))
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+Empty output
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 4
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 3
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 2
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+( print(v); v = v - 1)
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+v = v - 1
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 1
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+while(v > 0) ( print(v); v = v - 1)
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+print(v)
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
+
+---------- Program State <6>----------
+
+=== Execution Stack ===
+
+
+===== Symbol Table ====
+v --> 0
+
+
+====== File Table =====
+Empty symbol table
+
+====== Heap Table =====
+Empty symbol table
+
+======== Output =======
+4
+3
+2
+1
+0
+
+-----------------------------------
+
